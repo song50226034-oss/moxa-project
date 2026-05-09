@@ -1,0 +1,206 @@
+请生成一个完整可运行的 Next.js（App Router）+ Tailwind CSS 项目，用于一个基于中国艾草产地资源的全球B2B艾灸产品供应网站。
+
+项目目标：
+获取全球诊所、SPA、健康机构、代理商的询盘（lead generation）。
+网站不是电商，不做支付，只做B2B品牌展示与客户联系。
+
+--------------------------------------------------
+
+【商业定位】
+
+这是一个基于中国艾草产区（如河南南阳）的艾灸产品供应与资源整合网站。
+
+网站身份不是大型工厂，
+而是：
+
+“China-based moxa sourcing and wellness supply partner”
+
+目标市场：
+
+【核心市场】
+- 日本（针灸诊所、整骨院、鍼灸院）
+
+【增长市场】
+- 美国 / 欧洲（SPA、wellness、alternative therapy机构）
+
+【扩展市场】
+- 东南亚（健康机构、批发商、代理商）
+
+--------------------------------------------------
+
+【技术栈】
+
+- Next.js 最新稳定版（App Router）
+- Tailwind CSS
+- TypeScript
+- Responsive Design（Mobile First）
+- 可直接：
+  npm install
+  npm run dev
+- 可部署到 Vercel
+
+--------------------------------------------------
+
+【项目结构要求】
+
+使用清晰结构：
+
+/app
+  /page.tsx
+  /products/page.tsx
+  /about/page.tsx
+  /contact/page.tsx
+
+/components
+  Navbar.tsx
+  Footer.tsx
+  ProductCard.tsx
+  ContactForm.tsx
+  HeroSection.tsx
+  MarketSection.tsx
+
+/data
+  products.ts
+
+--------------------------------------------------
+
+【核心产品数据结构（必须数组化）】
+
+创建：
+
+/data/products.ts
+
+导出：
+
+const products = [
+  {
+    name: "Moxa Stick",
+    description: "Traditional moxibustion stick for acupuncture clinics",
+    use: "clinic / therapy / spa"
+  },
+  {
+    name: "Smokeless Moxibustion Device",
+    description: "Low-smoke modern moxibustion device",
+    use: "modern wellness clinics"
+  },
+  {
+    name: "Moxa Box",
+    description: "Heat therapy box for body treatment",
+    use: "spa / therapy centers"
+  },
+  {
+    name: "Moxa Wool",
+    description: "Raw moxa material for processing",
+    use: "manufacturing / OEM"
+  }
+];
+
+Products 页面必须使用 map() 动态渲染。
+
+--------------------------------------------------
+
+【页面要求】
+
+1. HOME PAGE
+
+Hero Title:
+Traditional Eastern Wellness Solutions for Modern Clinics
+
+Subtitle:
+Reliable moxa sourcing from China’s herbal production region
+
+CTA buttons:
+- View Products
+- Contact Us
+
+增加市场展示模块：
+- Japan Clinics
+- Western Wellness
+- Asia Distribution
+
+--------------------------------------------------
+
+2. PRODUCTS PAGE
+
+- 使用 ProductCard component
+- 动态渲染 products array
+- 每个产品显示：
+  - name
+  - description
+  - use case
+
+--------------------------------------------------
+
+3. ABOUT PAGE
+
+内容：
+- China (Nanyang) moxa supply chain advantage
+- B2B export cooperation
+- Stable supply capability
+- Wellness industry positioning
+- Global clinic support
+
+--------------------------------------------------
+
+4. CONTACT PAGE
+
+使用 ContactForm component
+
+字段：
+- name
+- email
+- message
+
+Submit：
+frontend only（console.log）
+
+显示：
+contact@yourbrand.com
+
+--------------------------------------------------
+
+【设计风格】
+
+- Japanese minimal style
+- Medical wellness branding
+- White / beige / dark gray
+- High-end clean spacing
+- Calm typography
+- 禁止中国工厂风
+- 禁止廉价批发感
+
+--------------------------------------------------
+
+【布局要求】
+
+- Navbar：
+  Home / Products / About / Contact
+
+- Footer：
+  copyright + brand text
+
+--------------------------------------------------
+
+【SEO要求】
+
+每个页面必须包含：
+- title
+- meta description
+- keywords
+
+关键词围绕：
+moxa / acupuncture / clinic supply / wellness
+
+--------------------------------------------------
+
+【限制】
+
+- 不做支付
+- 不做购物车
+- 不做后台
+- 不做登录系统
+- 只做B2B询盘网站
+
+--------------------------------------------------
+
+请生成完整可运行项目代码。
