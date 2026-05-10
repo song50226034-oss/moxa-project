@@ -7,16 +7,19 @@ export default function Footer() {
   const { t } = useI18n();
 
   const footerLinks = {
-    products: [
-      { label: t("footer.premiumMoxa"), href: "/products" },
-      { label: t("footer.smokelessDevices"), href: "/products" },
-      { label: t("footer.oemServices"), href: "/contact" },
-    ],
-    company: [
-      { label: t("nav.about"), href: "/about" },
-      { label: t("nav.contact"), href: "/contact" },
-    ],
-  };
+  products: [
+    { label: t?.footer?.premiumMoxa || "Premium Moxa Products", href: "/products" },
+    { label: t?.footer?.smokelessDevices || "Smokeless Devices", href: "/products" },
+    { label: t?.footer?.oemServices || "OEM Services", href: "/contact" },
+  ],
+  company: [
+    { label: t?.footer?.aboutUs || "About Us", href: "/about" },
+    { label: t?.footer?.contact || "Contact", href: "/contact" },
+  ],
+  resources: [
+    { label: t?.footer?.faq || "FAQ", href: "/faq" },
+  ],
+};
 
   return (
     <footer className="border-t border-cedar/10 bg-ink text-rice">
