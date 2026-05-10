@@ -32,7 +32,7 @@ export default function RelatedProducts({ products }: RelatedProductsProps) {
               />
               <div className="absolute left-3 top-3">
                 <span className="inline-flex rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-cedar backdrop-blur-sm">
-                  {product.category === "traditional" ? "Traditional" : product.category === "modern" ? "Modern" : "Raw Material"}
+                  {product.category === "traditional" ? t.products.categoryTraditional : product.category === "modern" ? t.products.categoryModern : t.products.categoryRaw}
                 </span>
               </div>
             </div>
@@ -44,9 +44,9 @@ export default function RelatedProducts({ products }: RelatedProductsProps) {
                 {shortDesc}
               </p>
               <div className="mt-4 flex items-center justify-between">
-                <span className="text-xs text-cedar/50">MOQ: {product.moq}</span>
+                <span className="text-xs text-cedar/50">{t.products.moqLabel}: {product.moq}</span>
                 <span className="text-sm font-medium text-matcha group-hover:text-ink">
-                  View Details →
+                  {t.products.viewDetails} →
                 </span>
               </div>
             </div>

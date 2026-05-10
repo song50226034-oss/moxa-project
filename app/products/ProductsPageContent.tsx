@@ -87,8 +87,8 @@ export default function ProductsPageContent() {
                 </svg>
               </div>
               <div className="text-xs sm:text-sm">
-                <p className="font-semibold text-ink">ISO Certified</p>
-                <p className="text-cedar/60">Quality Assured</p>
+                <p className="font-semibold text-ink">{t.products.isoCertified}</p>
+                <p className="text-cedar/60">{t.products.qualityAssured}</p>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3 rounded-lg bg-stonewash/30 px-4 py-3 sm:justify-start">
@@ -98,8 +98,8 @@ export default function ProductsPageContent() {
                 </svg>
               </div>
               <div className="text-xs sm:text-sm">
-                <p className="font-semibold text-ink">OEM Ready</p>
-                <p className="text-cedar/60">Private Label</p>
+                <p className="font-semibold text-ink">{t.products.oemReady}</p>
+                <p className="text-cedar/60">{t.products.privateLabel}</p>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3 rounded-lg bg-stonewash/30 px-4 py-3 sm:justify-start">
@@ -109,8 +109,8 @@ export default function ProductsPageContent() {
                 </svg>
               </div>
               <div className="text-xs sm:text-sm">
-                <p className="font-semibold text-ink">Global Shipping</p>
-                <p className="text-cedar/60">20+ Countries</p>
+                <p className="font-semibold text-ink">{t.products.globalShipping}</p>
+                <p className="text-cedar/60">{t.products.countriesServed}</p>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3 rounded-lg bg-stonewash/30 px-4 py-3 sm:justify-start">
@@ -120,8 +120,8 @@ export default function ProductsPageContent() {
                 </svg>
               </div>
               <div className="text-xs sm:text-sm">
-                <p className="font-semibold text-ink">Free Samples</p>
-                <p className="text-cedar/60">Credited to Order</p>
+                <p className="font-semibold text-ink">{t.products.freeSamples}</p>
+                <p className="text-cedar/60">{t.products.creditedToOrder}</p>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function ProductsPageContent() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-6 flex items-center justify-between">
             <p className="text-sm text-cedar/60">
-              Showing <span className="font-medium text-ink">{filteredProducts.length}</span> products
+              {t.products.showingProducts} <span className="font-medium text-ink">{filteredProducts.length}</span>
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -150,20 +150,20 @@ export default function ProductsPageContent() {
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-matcha">
-                OEM Services
+                {t.products.oemServices}
               </p>
               <h2 className="mt-4 text-3xl font-semibold text-ink sm:text-4xl">
-                Custom Manufacturing Solutions
+                {t.products.oemSectionTitle}
               </h2>
               <p className="mt-4 text-base leading-relaxed text-cedar/80">
-                We offer comprehensive OEM and private label services for brands looking to create their own line of moxa products. From custom formulations to tailored packaging designs, our experienced team can help bring your vision to life.
+                {t.products.oemSectionDesc}
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Custom formulation and blending",
-                  "Private label and branded packaging",
-                  "Flexible MOQ for new brands",
-                  "Quality assurance and certification support",
+                  t.products.oemItem1,
+                  t.products.oemItem2,
+                  t.products.oemItem3,
+                  t.products.oemItem4,
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-cedar">
                     <svg className="h-5 w-5 shrink-0 text-matcha" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -177,7 +177,7 @@ export default function ProductsPageContent() {
                 href="/contact?type=oem"
                 className="mt-8 inline-flex h-12 items-center justify-center rounded-lg bg-ink px-6 text-sm font-semibold text-rice transition-colors hover:bg-matcha"
               >
-                Discuss OEM Requirements
+                {t.products.discussOem}
               </Link>
             </div>
             <div className="relative">
@@ -198,7 +198,7 @@ export default function ProductsPageContent() {
                   </div>
                   <div>
                     <p className="text-2xl font-bold text-ink">100+</p>
-                    <p className="text-sm text-cedar/60">OEM Clients</p>
+                    <p className="text-sm text-cedar/60">{t.products.oemClients}</p>
                   </div>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function ProductsPageContent() {
             {t.cta.requestSamples}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-rice/70">
-            Evaluate our products before placing bulk orders. Sample costs are often credited toward your first order.
+            {t.products.sampleCtaDesc}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link

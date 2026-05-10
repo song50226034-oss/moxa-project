@@ -103,6 +103,54 @@ type Translations = {
     categoryModern: string;
     categoryRaw: string;
     filterAll: string;
+    // Product detail page
+    usageScenarios: string;
+    oemPrivateLabel: string;
+    customManufacturing: string;
+    customManufacturingDesc: string;
+    oemManufacturing: string;
+    privateLabelBranding: string;
+    flexibleMoq: string;
+    qualityCertification: string;
+    discussOem: string;
+    shippingInfo: string;
+    globalDelivery: string;
+    productFaq: string;
+    relatedProducts: string;
+    readyToOrder: string;
+    readyToOrderDesc: string;
+    sendInquiry: string;
+    // Trust badges
+    isoCertified: string;
+    qualityAssured: string;
+    oemReady: string;
+    privateLabel: string;
+    globalShipping: string;
+    countriesServed: string;
+    freeSamples: string;
+    creditedToOrder: string;
+    showingProducts: string;
+    // OEM Section
+    oemServices: string;
+    oemSectionTitle: string;
+    oemSectionDesc: string;
+    oemItem1: string;
+    oemItem2: string;
+    oemItem3: string;
+    oemItem4: string;
+    oemClients: string;
+    // Sample CTA
+    sampleCtaDesc: string;
+    // Inquiry form
+    inquirySubmitted: string;
+    inquirySubmittedDesc: string;
+    close: string;
+    inquireAbout: string;
+    inquiryFormDesc: string;
+    expectedQuantity: string;
+    expectedQuantityPlaceholder: string;
+    cancel: string;
+    packaging: string;
   };
   quality: {
     tagline: string;
@@ -292,6 +340,54 @@ const translations: Record<Locale, Translations> = {
       categoryModern: "Modern",
       categoryRaw: "Raw Materials",
       filterAll: "All Products",
+      // Product detail page
+      usageScenarios: "Usage Scenarios",
+      oemPrivateLabel: "OEM & Private Label",
+      customManufacturing: "Custom Manufacturing Solutions",
+      customManufacturingDesc: "We offer comprehensive customization options for this product, including custom formulations, branding, and packaging to match your specific requirements.",
+      oemManufacturing: "OEM manufacturing with your specifications",
+      privateLabelBranding: "Private label branding and packaging",
+      flexibleMoq: "Flexible MOQ for new brands",
+      qualityCertification: "Quality assurance and certification support",
+      discussOem: "Discuss OEM Requirements",
+      shippingInfo: "Shipping Information",
+      globalDelivery: "Global Delivery",
+      productFaq: "Frequently Asked Questions",
+      relatedProducts: "Related Products",
+      readyToOrder: "Ready to Order",
+      readyToOrderDesc: "Contact us to discuss your requirements, request samples, or get a customized quote for your business.",
+      sendInquiry: "Send Inquiry",
+      // Trust badges
+      isoCertified: "ISO Certified",
+      qualityAssured: "Quality Assured",
+      oemReady: "OEM Ready",
+      privateLabel: "Private Label",
+      globalShipping: "Global Shipping",
+      countriesServed: "20+ Countries",
+      freeSamples: "Free Samples",
+      creditedToOrder: "Credited to Order",
+      showingProducts: "Showing",
+      // OEM Section
+      oemServices: "OEM Services",
+      oemSectionTitle: "Custom Manufacturing Solutions",
+      oemSectionDesc: "We offer comprehensive OEM and private label services for brands looking to create their own line of moxa products. From custom formulations to tailored packaging designs, our experienced team can help bring your vision to life.",
+      oemItem1: "Custom formulation and blending",
+      oemItem2: "Private label and branded packaging",
+      oemItem3: "Flexible MOQ for new brands",
+      oemItem4: "Quality assurance and certification support",
+      oemClients: "OEM Clients",
+      // Sample CTA
+      sampleCtaDesc: "Evaluate our products before placing bulk orders. Sample costs are often credited toward your first order.",
+      // Inquiry form
+      inquirySubmitted: "Inquiry Submitted",
+      inquirySubmittedDesc: "Thank you for your interest. Our team will respond within 24-48 hours.",
+      close: "Close",
+      inquireAbout: "Inquire About",
+      inquiryFormDesc: "Fill out the form below and our team will get back to you within 24-48 hours.",
+      expectedQuantity: "Expected Quantity",
+      expectedQuantityPlaceholder: "e.g., 500 units per month",
+      cancel: "Cancel",
+      packaging: "Packaging",
     },
     quality: {
       tagline: "Quality Assurance",
@@ -394,12 +490,12 @@ const translations: Record<Locale, Translations> = {
       contact: "お問い合わせ",
     },
     hero: {
-      tagline: "中国南陽からのプレミアム艾供給",
+      tagline: "中国南陽からのプレ��アム艾供給",
       title: "現代クリニックのための伝統東洋ウェルネスソリューション",
       subtitle: "中国有数のハーブ生産地域から、世界のウェルネス専門家に本格的な艾製品をお届けします",
       viewProducts: "製品を見る",
       requestSamples: "サンプル請求",
-      brandMessage: "中国伝統の艾生産地、南陽を拠点に、現代の治療実践に信頼できる調達ソリューションを世界のウェルネス専門家にお届けします。",
+      brandMessage: "中国伝統の艾生産���、南陽を拠点に、現代の治療実践に信頼できる調達ソリューションを世界のウェルネス専門家にお届けします。",
     },
     markets: {
       tagline: "業界アプリケーション",
@@ -479,6 +575,54 @@ const translations: Record<Locale, Translations> = {
       categoryModern: "現代的",
       categoryRaw: "原材料",
       filterAll: "すべての製品",
+      // 製品詳細ページ
+      usageScenarios: "使用シーン",
+      oemPrivateLabel: "OEM・プライベートラベル",
+      customManufacturing: "カスタム製造ソリューション",
+      customManufacturingDesc: "カスタム処方、ブランディング、パッケージングなど、お客様のご要望に合わせた包括的なカスタマイズオプションをご提供します。",
+      oemManufacturing: "お客様の仕様に基づくOEM製造",
+      privateLabelBranding: "プライベートラベルブランディングとパッケージング",
+      flexibleMoq: "新規ブランド向けの柔軟な最小発注数量",
+      qualityCertification: "品質保証と認証サポート",
+      discussOem: "OEMのご相談",
+      shippingInfo: "配送情報",
+      globalDelivery: "グローバル配送",
+      productFaq: "よくあるご質問",
+      relatedProducts: "関連製品",
+      readyToOrder: "ご注文の準備ができましたか",
+      readyToOrderDesc: "ご要望のご相談、サンプルのご請求、またはお見積もりのご依頼はこちらから。",
+      sendInquiry: "お問い合わせを送信",
+      // 信頼バッジ
+      isoCertified: "ISO認証取得",
+      qualityAssured: "品質保証",
+      oemReady: "OEM対応",
+      privateLabel: "プライベートラベル",
+      globalShipping: "グローバル配送",
+      countriesServed: "20カ国以上",
+      freeSamples: "無料サンプル",
+      creditedToOrder: "初回注文に充当",
+      showingProducts: "表示中",
+      // OEMセクション
+      oemServices: "OEMサービス",
+      oemSectionTitle: "カスタム製造ソリューション",
+      oemSectionDesc: "独自の艾製品ラインを作りたいブランド向けに、包括的なOEMおよびプライベートラベルサービスを提供しています。カスタム処方からパッケージデザインまで、経験豊富なチームがお客様のビジョンを実現します。",
+      oemItem1: "カスタム処方とブレンド",
+      oemItem2: "プライベートラベルとブランドパッケージング",
+      oemItem3: "新規ブランド向けの柔軟な最小発注数量",
+      oemItem4: "品質保証と認証サポート",
+      oemClients: "OEMクライアント",
+      // サンプルCTA
+      sampleCtaDesc: "大量注文の前に製品をお試しください。サンプル費用は多くの場合、初回注文に充当されます。",
+      // 問い合わせフォーム
+      inquirySubmitted: "お問い合わせを送信しました",
+      inquirySubmittedDesc: "ご関心をお寄せいただきありがとうございます。24〜48時間以内にご返信いたします。",
+      close: "閉じる",
+      inquireAbout: "のお問い合わせ",
+      inquiryFormDesc: "以下のフォームにご記入ください。24〜48時間以内にご連絡いたします。",
+      expectedQuantity: "予想数量",
+      expectedQuantityPlaceholder: "例：月500個",
+      cancel: "キャンセル",
+      packaging: "パッケージング",
     },
     quality: {
       tagline: "品質保証",
@@ -545,7 +689,7 @@ const translations: Record<Locale, Translations> = {
       point1: "南陽のプレミアムヨモギ生産への直接アクセス",
       point2: "20カ国以上への確立されたB2B輸出パートナーシップ",
       point3: "ISO認証品質管理システム",
-      point4: "包括的なOEMとプライベートラベル能力",
+      point4: "包括的なOEM��プライベートラベル能力",
       point5: "専任のアカウント管理とアフターサービス",
       manufacturingTitle: "製造の卓越性",
       manufacturingDesc: "当社の施設は、伝統的な艾製造技術と現代の生産基準を組み合わせ、すべての製品がプロのウェルネス施術者の厳格な要件を満たすことを保証します。",
@@ -658,7 +802,7 @@ const translations: Record<Locale, Translations> = {
       specifications: "规格",
       inquireNow: "立即咨询",
       viewDetails: "查看详情",
-      requestSample: "申请样品",
+      requestSample: "申��样品",
       keySpecs: "主要规格",
       moqLabel: "起订量",
       oemAvailable: "支持OEM",
@@ -666,6 +810,54 @@ const translations: Record<Locale, Translations> = {
       categoryModern: "现代产品",
       categoryRaw: "原材料",
       filterAll: "全部产品",
+      // 产品详情页
+      usageScenarios: "应用场景",
+      oemPrivateLabel: "OEM与自有品牌",
+      customManufacturing: "定制生产解决方案",
+      customManufacturingDesc: "我们为该产品提供全面的定制选项，包括定制配方、品牌设计和包装，以满足您的具体需求。",
+      oemManufacturing: "按您的规格进行OEM生产",
+      privateLabelBranding: "自有品牌设计和包装",
+      flexibleMoq: "新品牌灵活起订量",
+      qualityCertification: "质量保证和认证支持",
+      discussOem: "洽谈OEM需求",
+      shippingInfo: "配送信息",
+      globalDelivery: "全球配送",
+      productFaq: "常见问题",
+      relatedProducts: "相关产品",
+      readyToOrder: "准备下单",
+      readyToOrderDesc: "联系我们讨论您的需求、申请样品或获取定制报价。",
+      sendInquiry: "发送询价",
+      // 信任徽章
+      isoCertified: "ISO认证",
+      qualityAssured: "品质保证",
+      oemReady: "OEM就绪",
+      privateLabel: "自有品牌",
+      globalShipping: "全球配送",
+      countriesServed: "覆盖20+国家",
+      freeSamples: "免费样品",
+      creditedToOrder: "抵扣首单",
+      showingProducts: "显示",
+      // OEM板块
+      oemServices: "OEM服务",
+      oemSectionTitle: "定制生产解决方案",
+      oemSectionDesc: "我们为希望创建自有艾草产品线的品牌提供全面的OEM和自有品牌服务。从定制配方到包装设计，我们经验丰富的团队将帮助您实现愿景。",
+      oemItem1: "定制配方和调配",
+      oemItem2: "自有品牌和品牌包装",
+      oemItem3: "新品牌灵活起订量",
+      oemItem4: "质量保证和认证支持",
+      oemClients: "OEM客户",
+      // 样品CTA
+      sampleCtaDesc: "在大批量订购前先试用我们的产品。样品费用通常可抵扣首单。",
+      // 询价表单
+      inquirySubmitted: "询价已提交",
+      inquirySubmittedDesc: "感谢您的关注。我们的团队将在24-48小时内回复。",
+      close: "关闭",
+      inquireAbout: "咨询产品",
+      inquiryFormDesc: "请填写以下表单，我们的团队将在24-48小时内与您联系。",
+      expectedQuantity: "预计数量",
+      expectedQuantityPlaceholder: "例如：每月500件",
+      cancel: "取消",
+      packaging: "包装",
     },
     quality: {
       tagline: "质量保证",

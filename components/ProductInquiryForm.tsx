@@ -57,24 +57,24 @@ export default function ProductInquiryForm({ product, onClose }: ProductInquiryF
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h3 className="mt-4 text-xl font-semibold text-ink">Inquiry Submitted</h3>
+            <h3 className="mt-4 text-xl font-semibold text-ink">{t.products.inquirySubmitted}</h3>
             <p className="mt-2 text-sm text-cedar/70">
-              Thank you for your interest in {name}. Our team will respond within 24-48 hours.
+              {t.products.inquirySubmittedDesc}
             </p>
             <button
               onClick={onClose}
               className="mt-6 inline-flex h-11 items-center justify-center rounded-lg bg-ink px-6 text-sm font-semibold text-rice transition-colors hover:bg-matcha"
             >
-              Close
+              {t.products.close}
             </button>
           </div>
         ) : (
           <>
             <h3 className="text-xl font-semibold text-ink sm:text-2xl">
-              Inquire About {name}
+              {t.products.inquireAbout} {name}
             </h3>
             <p className="mt-2 text-sm text-cedar/70">
-              Fill out the form below and our team will get back to you within 24-48 hours.
+              {t.products.inquiryFormDesc}
             </p>
 
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
@@ -140,7 +140,7 @@ export default function ProductInquiryForm({ product, onClose }: ProductInquiryF
 
               <div>
                 <label htmlFor="quantity" className="mb-1.5 block text-sm font-medium text-cedar">
-                  Expected Quantity
+                  {t.products.expectedQuantity}
                 </label>
                 <input
                   type="text"
@@ -148,7 +148,7 @@ export default function ProductInquiryForm({ product, onClose }: ProductInquiryF
                   value={formData.quantity}
                   onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
                   className="h-11 w-full rounded-lg border border-cedar/20 bg-white px-4 text-sm text-ink placeholder:text-cedar/40 focus:border-matcha focus:outline-none focus:ring-1 focus:ring-matcha"
-                  placeholder="e.g., 500 units per month"
+                  placeholder={t.products.expectedQuantityPlaceholder}
                 />
               </div>
 
@@ -173,7 +173,7 @@ export default function ProductInquiryForm({ product, onClose }: ProductInquiryF
                   onClick={onClose}
                   className="flex h-11 flex-1 items-center justify-center rounded-lg border border-cedar/20 text-sm font-semibold text-cedar transition-colors hover:bg-stonewash"
                 >
-                  Cancel
+                  {t.products.cancel}
                 </button>
                 <button
                   type="submit"

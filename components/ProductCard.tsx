@@ -31,7 +31,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Category badge */}
         <div className="absolute left-3 top-3">
           <span className="inline-flex rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-cedar backdrop-blur-sm">
-            {product.category === "traditional" ? t.products.categoryTraditional || "Traditional" : product.category === "modern" ? t.products.categoryModern || "Modern" : t.products.categoryRaw || "Raw Material"}
+            {product.category === "traditional" ? t.products.categoryTraditional : product.category === "modern" ? t.products.categoryModern : t.products.categoryRaw}
           </span>
         </div>
 
@@ -39,7 +39,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {product.oemSupport && (
           <div className="absolute right-3 top-3">
             <span className="inline-flex rounded-full bg-matcha/90 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
-              {t.products.oemAvailable || "OEM Available"}
+              {t.products.oemAvailable}
             </span>
           </div>
         )}

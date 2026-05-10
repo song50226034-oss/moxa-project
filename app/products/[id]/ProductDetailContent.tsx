@@ -85,16 +85,16 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
               {/* Category & badges */}
               <div className="flex flex-wrap items-center gap-2">
                 <span className="inline-flex rounded-full bg-stonewash px-3 py-1 text-xs font-medium text-cedar">
-                  {product.category === "traditional" ? "Traditional" : product.category === "modern" ? "Modern" : "Raw Material"}
+                  {product.category === "traditional" ? t.products.categoryTraditional : product.category === "modern" ? t.products.categoryModern : t.products.categoryRaw}
                 </span>
                 {product.oemSupport && (
                   <span className="inline-flex rounded-full bg-matcha/10 px-3 py-1 text-xs font-medium text-matcha">
-                    OEM Available
+                    {t.products.oemAvailable}
                   </span>
                 )}
                 {product.privateLabelSupport && (
                   <span className="inline-flex rounded-full bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
-                    Private Label
+                    {t.products.privateLabel}
                   </span>
                 )}
               </div>
@@ -107,15 +107,15 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
               {/* Quick Info */}
               <div className="mt-6 grid grid-cols-2 gap-4 rounded-xl bg-stonewash/50 p-4 sm:grid-cols-3">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">MOQ</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">{t.products.moqLabel}</p>
                   <p className="mt-1 font-medium text-ink">{product.moq}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">Use Case</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">{t.products.useCase}</p>
                   <p className="mt-1 font-medium text-ink">{product.use}</p>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">Packaging</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">{t.products.packaging}</p>
                   <p className="mt-1 text-sm text-cedar">{product.packaging}</p>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                   <svg className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
-                  {t.products.inquireNow || "Inquire Now"}
+                  {t.products.inquireNow}
                 </button>
                 <Link
                   href={`/contact?product=${product.id}&type=sample`}
@@ -138,7 +138,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                   <svg className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                   </svg>
-                  {t.products.requestSample || "Request Sample"}
+                  {t.products.requestSample}
                 </Link>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
       <section className="bg-stonewash/30 px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-2xl font-semibold text-ink sm:text-3xl">
-            {t.products.specifications || "Specifications"}
+            {t.products.specifications}
           </h2>
           <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-card">
             <table className="w-full">
@@ -176,7 +176,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
       <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-2xl font-semibold text-ink sm:text-3xl">
-            Usage Scenarios
+            {t.products.usageScenarios}
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {product.usageScenarios.map((scenario, index) => (
@@ -203,13 +203,13 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
             <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-matcha">
-                  OEM & Private Label
+                  {t.products.oemPrivateLabel}
                 </p>
                 <h2 className="mt-4 text-2xl font-semibold text-rice sm:text-3xl">
-                  Custom Manufacturing Solutions
+                  {t.products.customManufacturing}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-rice/70">
-                  We offer comprehensive customization options for this product, including custom formulations, branding, and packaging to match your specific requirements.
+                  {t.products.customManufacturingDesc}
                 </p>
                 <ul className="mt-6 space-y-3">
                   {product.oemSupport && (
@@ -217,7 +217,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                       <svg className="h-5 w-5 shrink-0 text-matcha" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      OEM manufacturing with your specifications
+                      {t.products.oemManufacturing}
                     </li>
                   )}
                   {product.privateLabelSupport && (
@@ -225,27 +225,27 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                       <svg className="h-5 w-5 shrink-0 text-matcha" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      Private label branding and packaging
+                      {t.products.privateLabelBranding}
                     </li>
                   )}
                   <li className="flex items-center gap-3 text-sm text-rice">
                     <svg className="h-5 w-5 shrink-0 text-matcha" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Flexible MOQ for new brands
+                    {t.products.flexibleMoq}
                   </li>
                   <li className="flex items-center gap-3 text-sm text-rice">
                     <svg className="h-5 w-5 shrink-0 text-matcha" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Quality assurance and certification support
+                    {t.products.qualityCertification}
                   </li>
                 </ul>
                 <Link
                   href={`/contact?product=${product.id}&type=oem`}
                   className="mt-8 inline-flex h-12 items-center justify-center rounded-lg bg-matcha px-6 text-sm font-semibold text-rice transition-colors hover:bg-rice hover:text-ink"
                 >
-                  Discuss OEM Requirements
+                  {t.products.discussOem}
                 </Link>
               </div>
               <div className="relative">
@@ -266,7 +266,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
       <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-2xl font-semibold text-ink sm:text-3xl">
-            Shipping Information
+            {t.products.shippingInfo}
           </h2>
           <div className="mt-8 rounded-xl bg-stonewash/50 p-6 sm:p-8">
             <div className="flex items-start gap-4">
@@ -276,7 +276,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-ink">Global Delivery</h3>
+                <h3 className="text-lg font-semibold text-ink">{t.products.globalDelivery}</h3>
                 <p className="mt-2 leading-relaxed text-cedar/80">{product.shippingInfo}</p>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
       <section className="bg-stonewash/30 px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-2xl font-semibold text-ink sm:text-3xl">
-            Frequently Asked Questions
+            {t.products.productFaq}
           </h2>
           <div className="mt-8 space-y-4">
             {product.faqs.map((faq, index) => (
@@ -321,7 +321,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
         <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
           <div className="mx-auto max-w-7xl">
             <h2 className="text-2xl font-semibold text-ink sm:text-3xl">
-              Related Products
+              {t.products.relatedProducts}
             </h2>
             <RelatedProducts products={relatedProducts} />
           </div>
@@ -332,23 +332,23 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
       <section className="px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl rounded-2xl bg-gradient-to-br from-matcha to-ink px-6 py-12 text-center sm:px-12 sm:py-16">
           <h2 className="text-2xl font-semibold text-rice sm:text-3xl">
-            Ready to Order {name}?
+            {t.products.readyToOrder} {name}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-rice/70">
-            Contact us to discuss your requirements, request samples, or get a customized quote for your business.
+            {t.products.readyToOrderDesc}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <button
               onClick={() => setShowInquiryForm(true)}
               className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-rice px-6 text-sm font-semibold text-ink transition-colors hover:bg-stonewash sm:w-auto"
             >
-              Send Inquiry
+              {t.products.sendInquiry}
             </button>
             <Link
               href={`/contact?product=${product.id}&type=sample`}
               className="inline-flex h-12 w-full items-center justify-center rounded-lg border border-rice/30 px-6 text-sm font-semibold text-rice transition-colors hover:bg-rice/10 sm:w-auto"
             >
-              Request Sample
+              {t.products.requestSample}
             </Link>
           </div>
         </div>
