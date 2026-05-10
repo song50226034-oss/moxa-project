@@ -96,15 +96,15 @@ export default function AdvantagesSection() {
             <div className="mt-10 grid grid-cols-3 gap-4 rounded-xl border border-cedar/10 bg-white/50 p-6">
               <div className="text-center">
                 <p className="text-2xl font-bold text-matcha sm:text-3xl">10+</p>
-                <p className="mt-1 text-xs text-cedar/70 sm:text-sm">Years Experience</p>
+                <p className="mt-1 text-xs text-cedar/70 sm:text-sm">{t.stats.yearsExperienceLabel}</p>
               </div>
               <div className="text-center">
                 <p className="text-2xl font-bold text-matcha sm:text-3xl">20+</p>
-                <p className="mt-1 text-xs text-cedar/70 sm:text-sm">Export Countries</p>
+                <p className="mt-1 text-xs text-cedar/70 sm:text-sm">{t.stats.exportCountriesLabel}</p>
               </div>
               <div className="text-center">
                 <p className="text-2xl font-bold text-matcha sm:text-3xl">500+</p>
-                <p className="mt-1 text-xs text-cedar/70 sm:text-sm">B2B Partners</p>
+                <p className="mt-1 text-xs text-cedar/70 sm:text-sm">{t.stats.b2bPartnersLabel}</p>
               </div>
             </div>
           </div>

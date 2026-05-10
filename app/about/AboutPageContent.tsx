@@ -18,12 +18,12 @@ export default function AboutPageContent() {
   ];
 
   const timeline = [
-    { year: "2010", event: "Company founded in Nanyang" },
-    { year: "2014", event: "ISO 9001 certification achieved" },
-    { year: "2016", event: "Expanded to international markets" },
-    { year: "2018", event: "OEM services launched" },
-    { year: "2020", event: "20+ export countries reached" },
-    { year: "2024", event: "500+ global B2B partners" },
+    { year: "2010", event: t.aboutPage.timeline2010 },
+    { year: "2014", event: t.aboutPage.timeline2014 },
+    { year: "2016", event: t.aboutPage.timeline2016 },
+    { year: "2018", event: t.aboutPage.timeline2018 },
+    { year: "2020", event: t.aboutPage.timeline2020 },
+    { year: "2024", event: t.aboutPage.timeline2024 },
   ];
 
   return (
@@ -66,7 +66,7 @@ export default function AboutPageContent() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold text-ink sm:text-4xl">
-              Why Partner With Us
+              {t.aboutPage.whyPartnerTitle}
             </h2>
           </div>
 
@@ -119,7 +119,7 @@ export default function AboutPageContent() {
 
             <div className="order-1 lg:order-2">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-matcha">
-                Production
+                {t.aboutPage.productionTagline}
               </p>
               <h2 className="mt-4 text-3xl font-semibold text-ink sm:text-4xl">
                 {t.about.manufacturingTitle}
@@ -131,19 +131,19 @@ export default function AboutPageContent() {
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="rounded-xl bg-white p-5 shadow-card">
                   <p className="text-3xl font-bold text-matcha">50,000+</p>
-                  <p className="mt-1 text-sm text-cedar/60">Sq. Meters Facility</p>
+                  <p className="mt-1 text-sm text-cedar/60">{t.stats.sqMetersFacility}</p>
                 </div>
                 <div className="rounded-xl bg-white p-5 shadow-card">
                   <p className="text-3xl font-bold text-matcha">200+</p>
-                  <p className="mt-1 text-sm text-cedar/60">Skilled Workers</p>
+                  <p className="mt-1 text-sm text-cedar/60">{t.stats.skilledWorkers}</p>
                 </div>
                 <div className="rounded-xl bg-white p-5 shadow-card">
                   <p className="text-3xl font-bold text-matcha">5M+</p>
-                  <p className="mt-1 text-sm text-cedar/60">Units/Year Capacity</p>
+                  <p className="mt-1 text-sm text-cedar/60">{t.stats.unitsYearCapacity}</p>
                 </div>
                 <div className="rounded-xl bg-white p-5 shadow-card">
                   <p className="text-3xl font-bold text-matcha">99.5%</p>
-                  <p className="mt-1 text-sm text-cedar/60">Quality Pass Rate</p>
+                  <p className="mt-1 text-sm text-cedar/60">{t.stats.qualityPassRate}</p>
                 </div>
               </div>
             </div>
@@ -156,10 +156,10 @@ export default function AboutPageContent() {
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-matcha">
-              Our Journey
+              {t.aboutPage.ourJourney}
             </p>
             <h2 className="mt-4 text-3xl font-semibold text-ink sm:text-4xl">
-              Milestones
+              {t.aboutPage.milestones}
             </h2>
           </div>
 
@@ -202,10 +202,10 @@ export default function AboutPageContent() {
       <section className="px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl rounded-2xl bg-matcha px-6 py-12 text-center sm:px-12 sm:py-16">
           <h2 className="text-2xl font-semibold text-rice sm:text-3xl">
-            Ready to Partner With Us?
+            {t.aboutPage.readyToPartner}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-rice/80">
-            Join 500+ global B2B partners who trust us for their moxa sourcing needs.
+            {t.aboutPage.readyToPartnerDesc}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
@@ -218,7 +218,7 @@ export default function AboutPageContent() {
               href="/products"
               className="inline-flex h-12 w-full items-center justify-center rounded-lg border border-rice/30 px-6 text-sm font-semibold text-rice transition-colors hover:bg-rice/10 sm:w-auto"
             >
-              View Products
+              {t.aboutPage.viewProducts}
             </Link>
           </div>
         </div>

@@ -4,13 +4,13 @@ export type ProductImage = {
 };
 
 export type ProductSpec = {
-  label: string;
-  value: string;
+  labelKey: string;
+  valueKey: string;
 };
 
 export type FAQ = {
-  question: string;
-  answer: string;
+  questionKey: string;
+  answerKey: string;
 };
 
 export type Product = {
@@ -19,17 +19,17 @@ export type Product = {
   descriptionKey: string;
   shortDescKey: string;
   specKey: string;
-  use: string;
+  useKey: string;
   image: string;
   category: "traditional" | "modern" | "raw";
   images: ProductImage[];
   specifications: ProductSpec[];
-  packaging: string;
+  packagingKey: string;
   moq: string;
   oemSupport: boolean;
   privateLabelSupport: boolean;
-  usageScenarios: string[];
-  shippingInfo: string;
+  usageScenarioKeys: string[];
+  shippingInfoKey: string;
   faqs: FAQ[];
   relatedProductIds: string[];
 };
@@ -41,7 +41,7 @@ const products: Product[] = [
     descriptionKey: "moxaStickDesc",
     shortDescKey: "moxaStickShort",
     specKey: "moxaStickSpec",
-    use: "clinic / therapy / spa",
+    useKey: "useClinic",
     image: "/images/products/moxa-stick-main.jpg",
     category: "traditional",
     images: [
@@ -51,28 +51,28 @@ const products: Product[] = [
       { src: "/images/products/moxa-stick-packaging.jpg", alt: "Professional packaging for moxa sticks" },
     ],
     specifications: [
-      { label: "Purity Ratio", value: "10:1 to 35:1" },
-      { label: "Diameter", value: "18mm / 22mm / 25mm" },
-      { label: "Length", value: "200mm" },
-      { label: "Aging Period", value: "3-5 years" },
-      { label: "Burn Time", value: "45-60 minutes" },
-      { label: "Material", value: "100% Pure Artemisia Argyi" },
+      { labelKey: "specPurityRatio", valueKey: "valPurityRange" },
+      { labelKey: "specDiameter", valueKey: "valDiameters" },
+      { labelKey: "specLength", valueKey: "valLength200" },
+      { labelKey: "specAgingPeriod", valueKey: "valAging3to5" },
+      { labelKey: "specBurnTime", valueKey: "valBurnTime45to60" },
+      { labelKey: "specMaterial", valueKey: "valPureArtemisia" },
     ],
-    packaging: "10 sticks per box, 50 boxes per carton. Custom packaging available.",
-    moq: "500 sticks (50 boxes)",
+    packagingKey: "packMoxaStick",
+    moq: "500",
     oemSupport: true,
     privateLabelSupport: true,
-    usageScenarios: [
-      "Acupuncture clinics for moxibustion therapy",
-      "Traditional Chinese medicine practices",
-      "Wellness spas offering heat therapy",
-      "Physical therapy and rehabilitation centers",
+    usageScenarioKeys: [
+      "scenarioClinicMoxa",
+      "scenarioTcm",
+      "scenarioWellnessSpa",
+      "scenarioPhysicalTherapy",
     ],
-    shippingInfo: "Sea freight (20-30 days), Air freight (5-7 days), Express courier (3-5 days). All shipments include proper documentation for customs clearance.",
+    shippingInfoKey: "shipMoxaStick",
     faqs: [
-      { question: "What purity ratio is best for clinical use?", answer: "For clinical use, we recommend 20:1 to 35:1 purity ratios for optimal therapeutic effect with minimal smoke." },
-      { question: "How should moxa sticks be stored?", answer: "Store in a cool, dry place away from direct sunlight. Properly stored moxa can maintain quality for years." },
-      { question: "Can I get custom branded packaging?", answer: "Yes, we offer full OEM services including custom packaging design, branding, and labeling." },
+      { questionKey: "faqPurityBest", answerKey: "faqPurityBestAns" },
+      { questionKey: "faqStorage", answerKey: "faqStorageAns" },
+      { questionKey: "faqCustomPackaging", answerKey: "faqCustomPackagingAns" },
     ],
     relatedProductIds: ["moxa-box", "moxa-cone", "moxa-wool"],
   },
@@ -82,7 +82,7 @@ const products: Product[] = [
     descriptionKey: "smokelessDeviceDesc",
     shortDescKey: "smokelessDeviceShort",
     specKey: "smokelessDeviceSpec",
-    use: "modern wellness clinics",
+    useKey: "useModernWellness",
     image: "/images/products/smokeless-device-main.jpg",
     category: "modern",
     images: [
@@ -92,28 +92,28 @@ const products: Product[] = [
       { src: "/images/products/smokeless-device-packaging.jpg", alt: "Professional device packaging" },
     ],
     specifications: [
-      { label: "Type", value: "Carbon-based smokeless" },
-      { label: "Temperature Range", value: "40-65°C adjustable" },
-      { label: "Heating Duration", value: "20-40 minutes" },
-      { label: "Power Source", value: "Self-heating / Electric options" },
-      { label: "Smoke Level", value: "Ultra-low (indoor safe)" },
-      { label: "Material", value: "Medical-grade materials" },
+      { labelKey: "specType", valueKey: "valCarbonSmokeless" },
+      { labelKey: "specTempRange", valueKey: "valTempRange40to65" },
+      { labelKey: "specHeatingDuration", valueKey: "valHeating20to40" },
+      { labelKey: "specPowerSource", valueKey: "valPowerOptions" },
+      { labelKey: "specSmokeLevel", valueKey: "valUltraLow" },
+      { labelKey: "specMaterial", valueKey: "valMedicalGrade" },
     ],
-    packaging: "20 units per box, 10 boxes per carton. Individual retail packaging available.",
-    moq: "200 units (10 boxes)",
+    packagingKey: "packSmokeless",
+    moq: "200",
     oemSupport: true,
     privateLabelSupport: true,
-    usageScenarios: [
-      "Modern wellness clinics with ventilation restrictions",
-      "Urban spa environments",
-      "Home therapy applications",
-      "Sensitive patient treatments",
+    usageScenarioKeys: [
+      "scenarioModernClinic",
+      "scenarioUrbanSpa",
+      "scenarioHomeTherapy",
+      "scenarioSensitivePatient",
     ],
-    shippingInfo: "Sea freight (20-30 days), Air freight (5-7 days). Special handling for electric variants.",
+    shippingInfoKey: "shipSmokeless",
     faqs: [
-      { question: "Are these suitable for indoor use?", answer: "Yes, smokeless devices are specifically designed for indoor environments with minimal ventilation." },
-      { question: "What is the temperature accuracy?", answer: "Our devices maintain temperature within ±2°C of the set point for consistent therapy." },
-      { question: "Do you offer electric versions?", answer: "Yes, we offer both self-heating and electric versions to suit different clinical needs." },
+      { questionKey: "faqIndoorUse", answerKey: "faqIndoorUseAns" },
+      { questionKey: "faqTempAccuracy", answerKey: "faqTempAccuracyAns" },
+      { questionKey: "faqElectricVersion", answerKey: "faqElectricVersionAns" },
     ],
     relatedProductIds: ["moxa-patch", "moxa-stick", "moxa-box"],
   },
@@ -123,7 +123,7 @@ const products: Product[] = [
     descriptionKey: "moxaBoxDesc",
     shortDescKey: "moxaBoxShort",
     specKey: "moxaBoxSpec",
-    use: "spa / therapy centers",
+    useKey: "useSpaTherapy",
     image: "/images/products/moxa-box-main.jpg",
     category: "traditional",
     images: [
@@ -133,28 +133,28 @@ const products: Product[] = [
       { src: "/images/products/moxa-box-sizes.jpg", alt: "Available sizes comparison" },
     ],
     specifications: [
-      { label: "Material", value: "Natural bamboo / Walnut wood" },
-      { label: "Sizes", value: "Single hole, 2-hole, 4-hole, 6-hole" },
-      { label: "Interior", value: "Stainless steel mesh" },
-      { label: "Height Adjustment", value: "3 levels" },
-      { label: "Fit", value: "Standard moxa sticks (18-25mm)" },
-      { label: "Finish", value: "Natural lacquer, food-safe" },
+      { labelKey: "specMaterial", valueKey: "valBambooWalnut" },
+      { labelKey: "specSizes", valueKey: "valBoxSizes" },
+      { labelKey: "specInterior", valueKey: "valStainlessMesh" },
+      { labelKey: "specHeightAdjustment", valueKey: "val3Levels" },
+      { labelKey: "specFit", valueKey: "valStandardSticks" },
+      { labelKey: "specFinish", valueKey: "valNaturalLacquer" },
     ],
-    packaging: "Individual box packaging, 20 units per carton.",
-    moq: "100 units",
+    packagingKey: "packMoxaBox",
+    moq: "100",
     oemSupport: true,
     privateLabelSupport: true,
-    usageScenarios: [
-      "Abdominal moxibustion therapy",
-      "Back and shoulder treatments",
-      "Spa heat therapy sessions",
-      "Home wellness routines",
+    usageScenarioKeys: [
+      "scenarioAbdominalMoxa",
+      "scenarioBackShoulder",
+      "scenarioSpaHeat",
+      "scenarioHomeWellness",
     ],
-    shippingInfo: "Sea freight recommended for bulk orders. Careful packaging to prevent damage.",
+    shippingInfoKey: "shipMoxaBox",
     faqs: [
-      { question: "What wood types are available?", answer: "We offer bamboo (economical), walnut (premium), and custom wood options for OEM orders." },
-      { question: "Can the height be adjusted during use?", answer: "Yes, our boxes feature 3-level height adjustment for temperature control." },
-      { question: "Are replacement parts available?", answer: "Yes, we supply replacement mesh screens and straps separately." },
+      { questionKey: "faqWoodTypes", answerKey: "faqWoodTypesAns" },
+      { questionKey: "faqHeightAdjust", answerKey: "faqHeightAdjustAns" },
+      { questionKey: "faqReplacementParts", answerKey: "faqReplacementPartsAns" },
     ],
     relatedProductIds: ["moxa-stick", "moxa-wool", "moxa-cone"],
   },
@@ -164,7 +164,7 @@ const products: Product[] = [
     descriptionKey: "moxaWoolDesc",
     shortDescKey: "moxaWoolShort",
     specKey: "moxaWoolSpec",
-    use: "manufacturing / OEM",
+    useKey: "useManufacturing",
     image: "/images/products/moxa-wool-main.jpg",
     category: "raw",
     images: [
@@ -174,28 +174,28 @@ const products: Product[] = [
       { src: "/images/products/moxa-wool-bulk.jpg", alt: "Bulk packaging options" },
     ],
     specifications: [
-      { label: "Purity Grades", value: "5:1, 10:1, 15:1, 20:1, 35:1" },
-      { label: "Form", value: "Loose wool / Compressed bales" },
-      { label: "Source", value: "Nanyang Artemisia Argyi" },
-      { label: "Aging", value: "1-5 years available" },
-      { label: "Color", value: "Golden yellow (indicates quality)" },
-      { label: "Packaging", value: "1kg, 5kg, 10kg, 25kg bags" },
+      { labelKey: "specPurityGrades", valueKey: "valPurityGrades" },
+      { labelKey: "specForm", valueKey: "valLooseCompressed" },
+      { labelKey: "specSource", valueKey: "valNanyangArtemisia" },
+      { labelKey: "specAging", valueKey: "valAging1to5" },
+      { labelKey: "specColor", valueKey: "valGoldenYellow" },
+      { labelKey: "specPackaging", valueKey: "valBagSizes" },
     ],
-    packaging: "Vacuum-sealed bags. 1kg, 5kg, 10kg, 25kg options. Custom packaging for OEM.",
+    packagingKey: "packMoxaWool",
     moq: "50kg",
     oemSupport: true,
     privateLabelSupport: true,
-    usageScenarios: [
-      "Direct moxibustion treatments",
-      "Cone and stick manufacturing",
-      "OEM product production",
-      "Research and development",
+    usageScenarioKeys: [
+      "scenarioDirectMoxa",
+      "scenarioConeStickMfg",
+      "scenarioOemProduction",
+      "scenarioResearchDev",
     ],
-    shippingInfo: "Sea freight for bulk orders. Special vacuum packaging maintains quality during transit.",
+    shippingInfoKey: "shipMoxaWool",
     faqs: [
-      { question: "What purity grade should I choose?", answer: "5:1 to 10:1 for manufacturing, 20:1+ for direct clinical use requiring finer texture." },
-      { question: "How is quality determined?", answer: "Quality is assessed by leaf-to-stem ratio, color (golden = better), and aging period." },
-      { question: "Can I get samples of different grades?", answer: "Yes, we provide sample kits with multiple grades for evaluation." },
+      { questionKey: "faqPurityGrade", answerKey: "faqPurityGradeAns" },
+      { questionKey: "faqQualityDetermined", answerKey: "faqQualityDeterminedAns" },
+      { questionKey: "faqSampleGrades", answerKey: "faqSampleGradesAns" },
     ],
     relatedProductIds: ["moxa-cone", "moxa-stick", "moxa-box"],
   },
@@ -205,7 +205,7 @@ const products: Product[] = [
     descriptionKey: "moxaConeDesc",
     shortDescKey: "moxaConeShort",
     specKey: "moxaConeSpec",
-    use: "acupuncture clinics",
+    useKey: "useAcupuncture",
     image: "/images/products/moxa-cone-main.jpg",
     category: "traditional",
     images: [
@@ -215,28 +215,28 @@ const products: Product[] = [
       { src: "/images/products/moxa-cone-varieties.jpg", alt: "Self-adhesive and traditional varieties" },
     ],
     specifications: [
-      { label: "Types", value: "Traditional / Self-adhesive" },
-      { label: "Sizes", value: "Mini (5mm), Small (8mm), Medium (12mm), Large (15mm)" },
-      { label: "Burn Time", value: "3-8 minutes per cone" },
-      { label: "Purity", value: "20:1 to 35:1" },
-      { label: "Base", value: "Paper / Adhesive options" },
-      { label: "Grade", value: "Clinical professional" },
+      { labelKey: "specTypes", valueKey: "valConeTypes" },
+      { labelKey: "specSizes", valueKey: "valConeSizes" },
+      { labelKey: "specBurnTime", valueKey: "valConeBurn3to8" },
+      { labelKey: "specPurityRatio", valueKey: "valConePurity" },
+      { labelKey: "specBase", valueKey: "valConeBase" },
+      { labelKey: "specGrade", valueKey: "valClinicalPro" },
     ],
-    packaging: "200 cones per box, 50 boxes per carton. Individual blister packs available.",
-    moq: "10,000 cones (50 boxes)",
+    packagingKey: "packMoxaCone",
+    moq: "10,000",
     oemSupport: true,
     privateLabelSupport: true,
-    usageScenarios: [
-      "Precise acupoint moxibustion",
-      "Scarring and non-scarring techniques",
-      "Combined acupuncture-moxa therapy",
-      "Home use with supervision guidance",
+    usageScenarioKeys: [
+      "scenarioPreciseAcupoint",
+      "scenarioScarringTech",
+      "scenarioCombinedTherapy",
+      "scenarioHomeSupervised",
     ],
-    shippingInfo: "Air or sea freight. Cones packaged to prevent crushing during transport.",
+    shippingInfoKey: "shipMoxaCone",
     faqs: [
-      { question: "What is the difference between traditional and self-adhesive?", answer: "Self-adhesive cones have a paper base with adhesive for easy placement; traditional cones require manual positioning." },
-      { question: "Which size is most popular?", answer: "Medium (12mm) is most popular for general clinical use; small (8mm) for facial and sensitive areas." },
-      { question: "Can cones be used with ginger/salt?", answer: "Yes, our traditional cones work well with indirect moxibustion techniques using ginger, salt, or garlic." },
+      { questionKey: "faqConeTypes", answerKey: "faqConeTypesAns" },
+      { questionKey: "faqConePopular", answerKey: "faqConePopularAns" },
+      { questionKey: "faqConeGinger", answerKey: "faqConeGingerAns" },
     ],
     relatedProductIds: ["moxa-stick", "moxa-wool", "moxa-box"],
   },
@@ -246,7 +246,7 @@ const products: Product[] = [
     descriptionKey: "moxaPatchDesc",
     shortDescKey: "moxaPatchShort",
     specKey: "moxaPatchSpec",
-    use: "retail / home use",
+    useKey: "useRetailHome",
     image: "/images/products/moxa-patch-main.jpg",
     category: "modern",
     images: [
@@ -256,28 +256,28 @@ const products: Product[] = [
       { src: "/images/products/moxa-patch-retail.jpg", alt: "Retail packaging design" },
     ],
     specifications: [
-      { label: "Heat Duration", value: "8-12 hours" },
-      { label: "Temperature", value: "40-50°C sustained" },
-      { label: "Sizes", value: "Small (5x5cm), Medium (7x10cm), Large (10x14cm)" },
-      { label: "Ingredients", value: "Moxa extract, iron powder, activated carbon" },
-      { label: "Adhesive", value: "Hypoallergenic medical-grade" },
-      { label: "Skin Safe", value: "Dermatologically tested" },
+      { labelKey: "specHeatDuration", valueKey: "valHeat8to12" },
+      { labelKey: "specTemperature", valueKey: "valTemp40to50" },
+      { labelKey: "specSizes", valueKey: "valPatchSizes" },
+      { labelKey: "specIngredients", valueKey: "valPatchIngredients" },
+      { labelKey: "specAdhesive", valueKey: "valHypoallergenic" },
+      { labelKey: "specSkinSafe", valueKey: "valDermoTested" },
     ],
-    packaging: "6 patches per retail box, 100 boxes per carton. Custom retail packaging available.",
-    moq: "5,000 patches (minimum 50 cartons)",
+    packagingKey: "packMoxaPatch",
+    moq: "5,000",
     oemSupport: true,
     privateLabelSupport: true,
-    usageScenarios: [
-      "Consumer retail wellness products",
-      "At-home pain relief solutions",
-      "Travel-friendly therapy option",
-      "Supplement to clinical treatments",
+    usageScenarioKeys: [
+      "scenarioRetailWellness",
+      "scenarioHomePainRelief",
+      "scenarioTravelTherapy",
+      "scenarioSupplementClinical",
     ],
-    shippingInfo: "Air or sea freight. Temperature-stable packaging for all climates.",
+    shippingInfoKey: "shipMoxaPatch",
     faqs: [
-      { question: "Are these safe for sensitive skin?", answer: "Yes, our patches use hypoallergenic adhesive and are dermatologically tested. Always test on a small area first." },
-      { question: "Can patches be cut to size?", answer: "We recommend using patches whole; cutting may affect heat distribution and duration." },
-      { question: "What retail packaging options exist?", answer: "We offer standard retail boxes, gift sets, and full custom packaging design for OEM orders." },
+      { questionKey: "faqSensitiveSkin", answerKey: "faqSensitiveSkinAns" },
+      { questionKey: "faqCutSize", answerKey: "faqCutSizeAns" },
+      { questionKey: "faqRetailPackaging", answerKey: "faqRetailPackagingAns" },
     ],
     relatedProductIds: ["smokeless-device", "moxa-cone", "moxa-stick"],
   },

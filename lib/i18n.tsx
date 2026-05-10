@@ -244,6 +244,208 @@ type Translations = {
     hours: string;
     allRightsReserved: string;
   };
+  // Trust badges and stats
+  stats: {
+    isoCertified: string;
+    countriesServed: string;
+    yearsExperience: string;
+    yearsExperienceLabel: string;
+    exportCountriesLabel: string;
+    b2bPartnersLabel: string;
+    sqMetersFacility: string;
+    skilledWorkers: string;
+    unitsYearCapacity: string;
+    qualityPassRate: string;
+  };
+  // About page
+  aboutPage: {
+    whyPartnerTitle: string;
+    productionTagline: string;
+    ourJourney: string;
+    milestones: string;
+    readyToPartner: string;
+    readyToPartnerDesc: string;
+    viewProducts: string;
+    timeline2010: string;
+    timeline2014: string;
+    timeline2016: string;
+    timeline2018: string;
+    timeline2020: string;
+    timeline2024: string;
+  };
+  // Countries for form
+  countries: {
+    japan: string;
+    unitedStates: string;
+    germany: string;
+    france: string;
+    unitedKingdom: string;
+    canada: string;
+    australia: string;
+    southKorea: string;
+    taiwan: string;
+    singapore: string;
+    malaysia: string;
+    thailand: string;
+    vietnam: string;
+    indonesia: string;
+    india: string;
+    other: string;
+  };
+  // Product detail data translations
+  productDetails: {
+    // Use case labels
+    useClinic: string;
+    useModernWellness: string;
+    useSpaTherapy: string;
+    useManufacturing: string;
+    useAcupuncture: string;
+    useRetailHome: string;
+    // Specification labels
+    specPurityRatio: string;
+    specDiameter: string;
+    specLength: string;
+    specAgingPeriod: string;
+    specBurnTime: string;
+    specMaterial: string;
+    specType: string;
+    specTempRange: string;
+    specHeatingDuration: string;
+    specPowerSource: string;
+    specSmokeLevel: string;
+    specSizes: string;
+    specInterior: string;
+    specHeightAdjustment: string;
+    specFit: string;
+    specFinish: string;
+    specPurityGrades: string;
+    specForm: string;
+    specSource: string;
+    specAging: string;
+    specColor: string;
+    specPackaging: string;
+    specTypes: string;
+    specBase: string;
+    specGrade: string;
+    specHeatDuration: string;
+    specTemperature: string;
+    specIngredients: string;
+    specAdhesive: string;
+    specSkinSafe: string;
+    // Specification values
+    valPurityRange: string;
+    valDiameters: string;
+    valLength200: string;
+    valAging3to5: string;
+    valBurnTime45to60: string;
+    valPureArtemisia: string;
+    valCarbonSmokeless: string;
+    valTempRange40to65: string;
+    valHeating20to40: string;
+    valPowerOptions: string;
+    valUltraLow: string;
+    valMedicalGrade: string;
+    valBambooWalnut: string;
+    valBoxSizes: string;
+    valStainlessMesh: string;
+    val3Levels: string;
+    valStandardSticks: string;
+    valNaturalLacquer: string;
+    valPurityGrades: string;
+    valLooseCompressed: string;
+    valNanyangArtemisia: string;
+    valAging1to5: string;
+    valGoldenYellow: string;
+    valBagSizes: string;
+    valConeTypes: string;
+    valConeSizes: string;
+    valConeBurn3to8: string;
+    valConePurity: string;
+    valConeBase: string;
+    valClinicalPro: string;
+    valHeat8to12: string;
+    valTemp40to50: string;
+    valPatchSizes: string;
+    valPatchIngredients: string;
+    valHypoallergenic: string;
+    valDermoTested: string;
+    // Packaging info
+    packMoxaStick: string;
+    packSmokeless: string;
+    packMoxaBox: string;
+    packMoxaWool: string;
+    packMoxaCone: string;
+    packMoxaPatch: string;
+    // Shipping info
+    shipMoxaStick: string;
+    shipSmokeless: string;
+    shipMoxaBox: string;
+    shipMoxaWool: string;
+    shipMoxaCone: string;
+    shipMoxaPatch: string;
+    // Usage scenarios
+    scenarioClinicMoxa: string;
+    scenarioTcm: string;
+    scenarioWellnessSpa: string;
+    scenarioPhysicalTherapy: string;
+    scenarioModernClinic: string;
+    scenarioUrbanSpa: string;
+    scenarioHomeTherapy: string;
+    scenarioSensitivePatient: string;
+    scenarioAbdominalMoxa: string;
+    scenarioBackShoulder: string;
+    scenarioSpaHeat: string;
+    scenarioHomeWellness: string;
+    scenarioDirectMoxa: string;
+    scenarioConeStickMfg: string;
+    scenarioOemProduction: string;
+    scenarioResearchDev: string;
+    scenarioPreciseAcupoint: string;
+    scenarioScarringTech: string;
+    scenarioCombinedTherapy: string;
+    scenarioHomeSupervised: string;
+    scenarioRetailWellness: string;
+    scenarioHomePainRelief: string;
+    scenarioTravelTherapy: string;
+    scenarioSupplementClinical: string;
+    // FAQ questions and answers
+    faqPurityBest: string;
+    faqPurityBestAns: string;
+    faqStorage: string;
+    faqStorageAns: string;
+    faqCustomPackaging: string;
+    faqCustomPackagingAns: string;
+    faqIndoorUse: string;
+    faqIndoorUseAns: string;
+    faqTempAccuracy: string;
+    faqTempAccuracyAns: string;
+    faqElectricVersion: string;
+    faqElectricVersionAns: string;
+    faqWoodTypes: string;
+    faqWoodTypesAns: string;
+    faqHeightAdjust: string;
+    faqHeightAdjustAns: string;
+    faqReplacementParts: string;
+    faqReplacementPartsAns: string;
+    faqPurityGrade: string;
+    faqPurityGradeAns: string;
+    faqQualityDetermined: string;
+    faqQualityDeterminedAns: string;
+    faqSampleGrades: string;
+    faqSampleGradesAns: string;
+    faqConeTypes: string;
+    faqConeTypesAns: string;
+    faqConePopular: string;
+    faqConePopularAns: string;
+    faqConeGinger: string;
+    faqConeGingerAns: string;
+    faqSensitiveSkin: string;
+    faqSensitiveSkinAns: string;
+    faqCutSize: string;
+    faqCutSizeAns: string;
+    faqRetailPackaging: string;
+    faqRetailPackagingAns: string;
+  };
 };
 
 const translations: Record<Locale, Translations> = {
@@ -481,6 +683,197 @@ const translations: Record<Locale, Translations> = {
       hours: "Business Hours",
       allRightsReserved: "All rights reserved",
     },
+    stats: {
+      isoCertified: "ISO Certified",
+      countriesServed: "20+ Countries",
+      yearsExperience: "10+ Years",
+      yearsExperienceLabel: "Years Experience",
+      exportCountriesLabel: "Export Countries",
+      b2bPartnersLabel: "B2B Partners",
+      sqMetersFacility: "Sq. Meters Facility",
+      skilledWorkers: "Skilled Workers",
+      unitsYearCapacity: "Units/Year Capacity",
+      qualityPassRate: "Quality Pass Rate",
+    },
+    aboutPage: {
+      whyPartnerTitle: "Why Partner With Us",
+      productionTagline: "Production",
+      ourJourney: "Our Journey",
+      milestones: "Milestones",
+      readyToPartner: "Ready to Partner With Us?",
+      readyToPartnerDesc: "Join 500+ global B2B partners who trust us for their moxa sourcing needs.",
+      viewProducts: "View Products",
+      timeline2010: "Company founded in Nanyang",
+      timeline2014: "ISO 9001 certification achieved",
+      timeline2016: "Expanded to international markets",
+      timeline2018: "OEM services launched",
+      timeline2020: "20+ export countries reached",
+      timeline2024: "500+ global B2B partners",
+    },
+    countries: {
+      japan: "Japan",
+      unitedStates: "United States",
+      germany: "Germany",
+      france: "France",
+      unitedKingdom: "United Kingdom",
+      canada: "Canada",
+      australia: "Australia",
+      southKorea: "South Korea",
+      taiwan: "Taiwan",
+      singapore: "Singapore",
+      malaysia: "Malaysia",
+      thailand: "Thailand",
+      vietnam: "Vietnam",
+      indonesia: "Indonesia",
+      india: "India",
+      other: "Other",
+    },
+    productDetails: {
+      useClinic: "clinic / therapy / spa",
+      useModernWellness: "modern wellness clinics",
+      useSpaTherapy: "spa / therapy centers",
+      useManufacturing: "manufacturing / OEM",
+      useAcupuncture: "acupuncture clinics",
+      useRetailHome: "retail / home use",
+      specPurityRatio: "Purity Ratio",
+      specDiameter: "Diameter",
+      specLength: "Length",
+      specAgingPeriod: "Aging Period",
+      specBurnTime: "Burn Time",
+      specMaterial: "Material",
+      specType: "Type",
+      specTempRange: "Temperature Range",
+      specHeatingDuration: "Heating Duration",
+      specPowerSource: "Power Source",
+      specSmokeLevel: "Smoke Level",
+      specSizes: "Sizes",
+      specInterior: "Interior",
+      specHeightAdjustment: "Height Adjustment",
+      specFit: "Fit",
+      specFinish: "Finish",
+      specPurityGrades: "Purity Grades",
+      specForm: "Form",
+      specSource: "Source",
+      specAging: "Aging",
+      specColor: "Color",
+      specPackaging: "Packaging",
+      specTypes: "Types",
+      specBase: "Base",
+      specGrade: "Grade",
+      specHeatDuration: "Heat Duration",
+      specTemperature: "Temperature",
+      specIngredients: "Ingredients",
+      specAdhesive: "Adhesive",
+      specSkinSafe: "Skin Safe",
+      valPurityRange: "10:1 to 35:1",
+      valDiameters: "18mm / 22mm / 25mm",
+      valLength200: "200mm",
+      valAging3to5: "3-5 years",
+      valBurnTime45to60: "45-60 minutes",
+      valPureArtemisia: "100% Pure Artemisia Argyi",
+      valCarbonSmokeless: "Carbon-based smokeless",
+      valTempRange40to65: "40-65°C adjustable",
+      valHeating20to40: "20-40 minutes",
+      valPowerOptions: "Self-heating / Electric options",
+      valUltraLow: "Ultra-low (indoor safe)",
+      valMedicalGrade: "Medical-grade materials",
+      valBambooWalnut: "Natural bamboo / Walnut wood",
+      valBoxSizes: "Single hole, 2-hole, 4-hole, 6-hole",
+      valStainlessMesh: "Stainless steel mesh",
+      val3Levels: "3 levels",
+      valStandardSticks: "Standard moxa sticks (18-25mm)",
+      valNaturalLacquer: "Natural lacquer, food-safe",
+      valPurityGrades: "5:1, 10:1, 15:1, 20:1, 35:1",
+      valLooseCompressed: "Loose wool / Compressed bales",
+      valNanyangArtemisia: "Nanyang Artemisia Argyi",
+      valAging1to5: "1-5 years available",
+      valGoldenYellow: "Golden yellow (indicates quality)",
+      valBagSizes: "1kg, 5kg, 10kg, 25kg bags",
+      valConeTypes: "Traditional / Self-adhesive",
+      valConeSizes: "Mini (5mm), Small (8mm), Medium (12mm), Large (15mm)",
+      valConeBurn3to8: "3-8 minutes per cone",
+      valConePurity: "20:1 to 35:1",
+      valConeBase: "Paper / Adhesive options",
+      valClinicalPro: "Clinical professional",
+      valHeat8to12: "8-12 hours",
+      valTemp40to50: "40-50°C sustained",
+      valPatchSizes: "Small (5x5cm), Medium (7x10cm), Large (10x14cm)",
+      valPatchIngredients: "Moxa extract, iron powder, activated carbon",
+      valHypoallergenic: "Hypoallergenic medical-grade",
+      valDermoTested: "Dermatologically tested",
+      packMoxaStick: "10 sticks per box, 50 boxes per carton. Custom packaging available.",
+      packSmokeless: "20 units per box, 10 boxes per carton. Individual retail packaging available.",
+      packMoxaBox: "Individual box packaging, 20 units per carton.",
+      packMoxaWool: "Vacuum-sealed bags. 1kg, 5kg, 10kg, 25kg options. Custom packaging for OEM.",
+      packMoxaCone: "200 cones per box, 50 boxes per carton. Individual blister packs available.",
+      packMoxaPatch: "6 patches per retail box, 100 boxes per carton. Custom retail packaging available.",
+      shipMoxaStick: "Sea freight (20-30 days), Air freight (5-7 days), Express courier (3-5 days). All shipments include proper documentation for customs clearance.",
+      shipSmokeless: "Sea freight (20-30 days), Air freight (5-7 days). Special handling for electric variants.",
+      shipMoxaBox: "Sea freight recommended for bulk orders. Careful packaging to prevent damage.",
+      shipMoxaWool: "Sea freight for bulk orders. Special vacuum packaging maintains quality during transit.",
+      shipMoxaCone: "Air or sea freight. Cones packaged to prevent crushing during transport.",
+      shipMoxaPatch: "Air or sea freight. Temperature-stable packaging for all climates.",
+      scenarioClinicMoxa: "Acupuncture clinics for moxibustion therapy",
+      scenarioTcm: "Traditional Chinese medicine practices",
+      scenarioWellnessSpa: "Wellness spas offering heat therapy",
+      scenarioPhysicalTherapy: "Physical therapy and rehabilitation centers",
+      scenarioModernClinic: "Modern wellness clinics with ventilation restrictions",
+      scenarioUrbanSpa: "Urban spa environments",
+      scenarioHomeTherapy: "Home therapy applications",
+      scenarioSensitivePatient: "Sensitive patient treatments",
+      scenarioAbdominalMoxa: "Abdominal moxibustion therapy",
+      scenarioBackShoulder: "Back and shoulder treatments",
+      scenarioSpaHeat: "Spa heat therapy sessions",
+      scenarioHomeWellness: "Home wellness routines",
+      scenarioDirectMoxa: "Direct moxibustion treatments",
+      scenarioConeStickMfg: "Cone and stick manufacturing",
+      scenarioOemProduction: "OEM product production",
+      scenarioResearchDev: "Research and development",
+      scenarioPreciseAcupoint: "Precise acupoint moxibustion",
+      scenarioScarringTech: "Scarring and non-scarring techniques",
+      scenarioCombinedTherapy: "Combined acupuncture-moxa therapy",
+      scenarioHomeSupervised: "Home use with supervision guidance",
+      scenarioRetailWellness: "Consumer retail wellness products",
+      scenarioHomePainRelief: "At-home pain relief solutions",
+      scenarioTravelTherapy: "Travel-friendly therapy option",
+      scenarioSupplementClinical: "Supplement to clinical treatments",
+      faqPurityBest: "What purity ratio is best for clinical use?",
+      faqPurityBestAns: "For clinical use, we recommend 20:1 to 35:1 purity ratios for optimal therapeutic effect with minimal smoke.",
+      faqStorage: "How should moxa sticks be stored?",
+      faqStorageAns: "Store in a cool, dry place away from direct sunlight. Properly stored moxa can maintain quality for years.",
+      faqCustomPackaging: "Can I get custom branded packaging?",
+      faqCustomPackagingAns: "Yes, we offer full OEM services including custom packaging design, branding, and labeling.",
+      faqIndoorUse: "Are these suitable for indoor use?",
+      faqIndoorUseAns: "Yes, smokeless devices are specifically designed for indoor environments with minimal ventilation.",
+      faqTempAccuracy: "What is the temperature accuracy?",
+      faqTempAccuracyAns: "Our devices maintain temperature within ±2°C of the set point for consistent therapy.",
+      faqElectricVersion: "Do you offer electric versions?",
+      faqElectricVersionAns: "Yes, we offer both self-heating and electric versions to suit different clinical needs.",
+      faqWoodTypes: "What wood types are available?",
+      faqWoodTypesAns: "We offer bamboo (economical), walnut (premium), and custom wood options for OEM orders.",
+      faqHeightAdjust: "Can the height be adjusted during use?",
+      faqHeightAdjustAns: "Yes, our boxes feature 3-level height adjustment for temperature control.",
+      faqReplacementParts: "Are replacement parts available?",
+      faqReplacementPartsAns: "Yes, we supply replacement mesh screens and straps separately.",
+      faqPurityGrade: "What purity grade should I choose?",
+      faqPurityGradeAns: "5:1 to 10:1 for manufacturing, 20:1+ for direct clinical use requiring finer texture.",
+      faqQualityDetermined: "How is quality determined?",
+      faqQualityDeterminedAns: "Quality is assessed by leaf-to-stem ratio, color (golden = better), and aging period.",
+      faqSampleGrades: "Can I get samples of different grades?",
+      faqSampleGradesAns: "Yes, we provide sample kits with multiple grades for evaluation.",
+      faqConeTypes: "What is the difference between traditional and self-adhesive?",
+      faqConeTypesAns: "Self-adhesive cones have a paper base with adhesive for easy placement; traditional cones require manual positioning.",
+      faqConePopular: "Which size is most popular?",
+      faqConePopularAns: "Medium (12mm) is most popular for general clinical use; small (8mm) for facial and sensitive areas.",
+      faqConeGinger: "Can cones be used with ginger/salt?",
+      faqConeGingerAns: "Yes, our traditional cones work well with indirect moxibustion techniques using ginger, salt, or garlic.",
+      faqSensitiveSkin: "Are these safe for sensitive skin?",
+      faqSensitiveSkinAns: "Yes, our patches use hypoallergenic adhesive and are dermatologically tested. Always test on a small area first.",
+      faqCutSize: "Can patches be cut to size?",
+      faqCutSizeAns: "We recommend using patches whole; cutting may affect heat distribution and duration.",
+      faqRetailPackaging: "What retail packaging options exist?",
+      faqRetailPackagingAns: "We offer standard retail boxes, gift sets, and full custom packaging design for OEM orders.",
+    },
   },
   ja: {
     nav: {
@@ -627,7 +1020,7 @@ const translations: Record<Locale, Translations> = {
     quality: {
       tagline: "品質保証",
       title: "卓越性へのコミットメント",
-      subtitle: "すべての製品が安全性、純度、治療効果の国際基準を満たしています。",
+      subtitle: "すべての製��が安全性、純度、治療効果の国際基準を満たしています。",
       item1: "ISO 9001認証取得製造施設",
       item2: "純度と安全性の第三者機関試験",
       item3: "GMP準拠の製造プロセス",
@@ -670,7 +1063,7 @@ const translations: Record<Locale, Translations> = {
       selectType: "種類を選択",
       typeSample: "サンプル請求",
       typeDistributor: "代理店パートナーシップ",
-      typeOEM: "OEM/プライベートラベル",
+      typeOEM: "OEM/プライ��ートラベル",
       typeGeneral: "一般的なお問い合わせ",
       message: "メッセージ",
       messagePlaceholder: "ご要望、ターゲット市場、予想数量などをお知らせください...",
@@ -695,7 +1088,7 @@ const translations: Record<Locale, Translations> = {
       manufacturingDesc: "当社の施設は、伝統的な艾製造技術と現代の生産基準を組み合わせ、すべての製品がプロのウェルネス施術者の厳格な要件を満たすことを保証します。",
     },
     footer: {
-      copyright: "Moxa Source Partner. All rights reserved.",
+      copyright: "Moxa Source Partner 無断転載を禁じます",
       tagline: "中国ハーブ生産地域の中心からのプレミアム艾供給。",
       quickLinks: "クイックリンク",
       contactInfo: "連絡先情報",
@@ -707,7 +1100,7 @@ const translations: Record<Locale, Translations> = {
       premiumMoxa: "プレミアム艾條",
       smokelessDevices: "無煙灸器具",
       oemServices: "OEMサービス",
-      rights: "All rights reserved.",
+      rights: "無断転載を禁じます。",
       location: "中国河南省南陽市",
       aboutUs: "会社概要",
       faq: "よくある質問",
@@ -715,6 +1108,197 @@ const translations: Record<Locale, Translations> = {
       email: "メール",
       hours: "営業時間",
       allRightsReserved: "無断転載を禁じます",
+    },
+    stats: {
+      isoCertified: "ISO認証取得",
+      countriesServed: "20カ国以上",
+      yearsExperience: "10年以上",
+      yearsExperienceLabel: "業界経験",
+      exportCountriesLabel: "輸出国",
+      b2bPartnersLabel: "B2Bパートナー",
+      sqMetersFacility: "平方メートルの施設",
+      skilledWorkers: "熟練スタッフ",
+      unitsYearCapacity: "年間生産能力",
+      qualityPassRate: "品質合格率",
+    },
+    aboutPage: {
+      whyPartnerTitle: "パートナーシップの理由",
+      productionTagline: "製造",
+      ourJourney: "私たちの歩み",
+      milestones: "沿革",
+      readyToPartner: "パートナーシップを始めませんか？",
+      readyToPartnerDesc: "艾製品の調達で信頼される500社以上のグローバルB2Bパートナーに加わりましょう。",
+      viewProducts: "製品を見る",
+      timeline2010: "南陽で会社設立",
+      timeline2014: "ISO 9001認証取得",
+      timeline2016: "国際市場へ進出",
+      timeline2018: "OEMサービス開始",
+      timeline2020: "輸出国20カ国以上達成",
+      timeline2024: "グローバルB2Bパートナー500社以上",
+    },
+    countries: {
+      japan: "日本",
+      unitedStates: "アメリカ",
+      germany: "ドイツ",
+      france: "フランス",
+      unitedKingdom: "イギリス",
+      canada: "カナダ",
+      australia: "オーストラリア",
+      southKorea: "韓国",
+      taiwan: "台湾",
+      singapore: "シンガポール",
+      malaysia: "マレーシア",
+      thailand: "タイ",
+      vietnam: "ベトナム",
+      indonesia: "インドネシア",
+      india: "インド",
+      other: "その他",
+    },
+    productDetails: {
+      useClinic: "クリニック・セラピー・スパ",
+      useModernWellness: "現代ウェルネスクリニック",
+      useSpaTherapy: "スパ・セラピーセンター",
+      useManufacturing: "製造・OEM",
+      useAcupuncture: "鍼灸院",
+      useRetailHome: "小売・家庭用",
+      specPurityRatio: "純度比",
+      specDiameter: "直径",
+      specLength: "長さ",
+      specAgingPeriod: "熟成期間",
+      specBurnTime: "燃焼時間",
+      specMaterial: "素材",
+      specType: "タイプ",
+      specTempRange: "温度範囲",
+      specHeatingDuration: "加熱時間",
+      specPowerSource: "電源",
+      specSmokeLevel: "煙レベル",
+      specSizes: "サイズ",
+      specInterior: "内部構造",
+      specHeightAdjustment: "高さ調整",
+      specFit: "適合",
+      specFinish: "仕上げ",
+      specPurityGrades: "純度グレード",
+      specForm: "形状",
+      specSource: "産地",
+      specAging: "熟成",
+      specColor: "色",
+      specPackaging: "包装",
+      specTypes: "種類",
+      specBase: "ベース",
+      specGrade: "グレード",
+      specHeatDuration: "発熱時間",
+      specTemperature: "温度",
+      specIngredients: "成分",
+      specAdhesive: "粘着剤",
+      specSkinSafe: "肌への安全性",
+      valPurityRange: "10:1〜35:1",
+      valDiameters: "18mm / 22mm / 25mm",
+      valLength200: "200mm",
+      valAging3to5: "3〜5年",
+      valBurnTime45to60: "45〜60分",
+      valPureArtemisia: "100%純ヨモギ（艾蒿）",
+      valCarbonSmokeless: "炭素ベース無煙タイプ",
+      valTempRange40to65: "40〜65°C 調整可能",
+      valHeating20to40: "20〜40分",
+      valPowerOptions: "自己発熱式 / 電気式",
+      valUltraLow: "超低煙（室内使用可）",
+      valMedicalGrade: "医療グレード素材",
+      valBambooWalnut: "天然竹 / ウォールナット材",
+      valBoxSizes: "1穴、2穴、4穴、6穴",
+      valStainlessMesh: "ステンレスメッシュ",
+      val3Levels: "3段階",
+      valStandardSticks: "標準艾條対応（18〜25mm）",
+      valNaturalLacquer: "天然ラッカー、食品安全",
+      valPurityGrades: "5:1、10:1、15:1、20:1、35:1",
+      valLooseCompressed: "ルーズウール / 圧縮ベール",
+      valNanyangArtemisia: "南陽産ヨモギ（艾蒿）",
+      valAging1to5: "1〜5年熟成品あり",
+      valGoldenYellow: "黄金色（品質指標）",
+      valBagSizes: "1kg、5kg、10kg、25kg袋",
+      valConeTypes: "伝統式 / 粘着式",
+      valConeSizes: "ミニ（5mm）、小（8mm）、中（12mm）、大（15mm）",
+      valConeBurn3to8: "1個あたり3〜8分",
+      valConePurity: "20:1〜35:1",
+      valConeBase: "紙製 / 粘着式オプション",
+      valClinicalPro: "クリニカルプロフェッショナル",
+      valHeat8to12: "8〜12時間",
+      valTemp40to50: "40〜50°C 持続",
+      valPatchSizes: "小（5x5cm）、中（7x10cm）、大（10x14cm）",
+      valPatchIngredients: "艾エキス、鉄粉、活性炭",
+      valHypoallergenic: "低アレルギー性医療グレード",
+      valDermoTested: "皮膚科学的テスト済み",
+      packMoxaStick: "1箱10本入り、1カートン50箱。カスタムパッケージ対応可。",
+      packSmokeless: "1箱20個入り、1カートン10箱。個別小売包装対応可。",
+      packMoxaBox: "個装箱入り、1カートン20個。",
+      packMoxaWool: "真空パック。1kg、5kg、10kg、25kgオプション。OEM向けカスタム包装対応。",
+      packMoxaCone: "1箱200個入り、1カートン50箱。個別ブリスターパック対応可。",
+      packMoxaPatch: "小売箱1箱6枚入り、1カートン100箱。カスタム小売包装対応可。",
+      shipMoxaStick: "海上輸送（20〜30日）、航空輸送（5〜7日）、宅配便（3〜5日）。すべての出荷に通関用書類完備。",
+      shipSmokeless: "海上輸送（20〜30日）、航空輸送（5〜7日）。電気式は特別取り扱い。",
+      shipMoxaBox: "大量注文は海上輸送推奨。破損防止のための丁寧な梱包。",
+      shipMoxaWool: "大量注文は海上輸送。特別真空包装で輸送中の品質維持。",
+      shipMoxaCone: "航空または海上輸送。輸送中の破損防止包装。",
+      shipMoxaPatch: "航空または海上輸送。すべての気候に対応した温度安定包装。",
+      scenarioClinicMoxa: "鍼灸院での灸治療",
+      scenarioTcm: "中医学・東洋医学治療",
+      scenarioWellnessSpa: "温熱療法を提供するウェルネススパ",
+      scenarioPhysicalTherapy: "理学療法・リハビリテーションセンター",
+      scenarioModernClinic: "換気制限のある現代ウェルネスクリニック",
+      scenarioUrbanSpa: "都市型スパ環境",
+      scenarioHomeTherapy: "家庭用セラピー",
+      scenarioSensitivePatient: "敏感な患者様への治療",
+      scenarioAbdominalMoxa: "腹部への灸療法",
+      scenarioBackShoulder: "背中・肩の治療",
+      scenarioSpaHeat: "スパでの温熱セラピーセッション",
+      scenarioHomeWellness: "家庭でのウェルネスルーティン",
+      scenarioDirectMoxa: "直接灸治療",
+      scenarioConeStickMfg: "艾炷・艾條の製造",
+      scenarioOemProduction: "OEM製品の生産",
+      scenarioResearchDev: "研究開発",
+      scenarioPreciseAcupoint: "精密な経穴への施灸",
+      scenarioScarringTech: "有痕灸・無痕灸技法",
+      scenarioCombinedTherapy: "鍼灸併用療法",
+      scenarioHomeSupervised: "指導のもとでの家庭使用",
+      scenarioRetailWellness: "消費者向けウェルネス小売製品",
+      scenarioHomePainRelief: "家庭での痛み緩和ソリューション",
+      scenarioTravelTherapy: "旅行に便利なセラピーオプション",
+      scenarioSupplementClinical: "臨床治療の補助として",
+      faqPurityBest: "臨床使用に最適な純度比は？",
+      faqPurityBestAns: "臨床使用には、煙が少なく治療効果が最適な20:1〜35:1の純度比をお勧めします。",
+      faqStorage: "艾條の保管方法は？",
+      faqStorageAns: "直射日光を避け、涼しく乾燥した場所に保管してください。適切に保管すれば、長年品質を維持できます。",
+      faqCustomPackaging: "カスタムブランドパッケージは可能ですか？",
+      faqCustomPackagingAns: "はい、カスタムパッケージデザイン、ブランディング、ラベリングを含むフルOEMサービスを提供しています。",
+      faqIndoorUse: "室内での使用は可能ですか？",
+      faqIndoorUseAns: "はい、無煙灸器具は換気が最小限の室内環境向けに特別に設計されています。",
+      faqTempAccuracy: "温度精度はどのくらいですか？",
+      faqTempAccuracyAns: "当社の器具は設定温度から±2°C以内を維持し、一貫した治療を提供します。",
+      faqElectricVersion: "電気式バージョンはありますか？",
+      faqElectricVersionAns: "はい、様々な臨床ニーズに対応するため、自己発熱式と電気式の両方をご用意しています。",
+      faqWoodTypes: "どのような木材タイプがありますか？",
+      faqWoodTypesAns: "竹（経済的）、ウォールナット（プレミアム）、およびOEM注文向けのカスタム木材オプションをご用意しています。",
+      faqHeightAdjust: "使用中に高さ調整は可能ですか？",
+      faqHeightAdjustAns: "はい、当社の灸箱は温度制御のための3段階高さ調整機能を備えています。",
+      faqReplacementParts: "交換部品は入手可能ですか？",
+      faqReplacementPartsAns: "はい、交換用メッシュスクリーンとストラップを別途ご用意しています。",
+      faqPurityGrade: "どの純度グレードを選ぶべきですか？",
+      faqPurityGradeAns: "製造用には5:1〜10:1、より細かいテクスチャが必要な直接臨床使用には20:1以上をお勧めします。",
+      faqQualityDetermined: "品質はどのように判断されますか？",
+      faqQualityDeterminedAns: "品質は葉と茎の比率、色（黄金色が良い）、熟成期間で評価されます。",
+      faqSampleGrades: "異なるグレードのサンプルを入手できますか？",
+      faqSampleGradesAns: "はい、評価用に複数グレードのサンプルキットをご用意しています。",
+      faqConeTypes: "伝統式と粘着式の違いは何ですか？",
+      faqConeTypesAns: "粘着式艾炷は簡単に配置できる粘着付き紙ベースです。伝統式は手動で配置する必要があります。",
+      faqConePopular: "最も人気のあるサイズは？",
+      faqConePopularAns: "一般的な臨床使用には中（12mm）が最も人気です。顔面や敏感な部位には小（8mm）をご使用ください。",
+      faqConeGinger: "生姜や塩と一緒に艾炷を使用できますか？",
+      faqConeGingerAns: "はい、当社の伝統式艾炷は生姜、塩、にんにくを使用した間接灸技法に適しています。",
+      faqSensitiveSkin: "敏感肌でも安全ですか？",
+      faqSensitiveSkinAns: "はい、当社のパッチは低アレルギー性粘着剤を使用し、皮膚科学的にテスト済みです。最初に小さな範囲でテストしてください。",
+      faqCutSize: "パッチをカットして使用できますか？",
+      faqCutSizeAns: "パッチはそのままの使用をお勧めします。カットすると発熱の分布と持続時間に影響する可能性があります。",
+      faqRetailPackaging: "どのような小売包装オプションがありますか？",
+      faqRetailPackagingAns: "標準小売ボックス、ギフトセット、およびOEM注文向けのフルカスタムパッケージデザインをご用意しています。",
     },
   },
   zh: {
@@ -730,7 +1314,7 @@ const translations: Record<Locale, Translations> = {
       subtitle: "连接全球养生专业人士与中国著名草药产区的正宗艾灸产品",
       viewProducts: "查看产品",
       requestSamples: "申请样品",
-      brandMessage: "立足于中国传统艾草生产基地南阳，我们为全球养生专业人士提供可靠的现代治疗实践采购解决方案。",
+      brandMessage: "立足于中国传统艾草生产基地���阳，我们为全球养生专业人士提供可靠的现代治疗实践采购解决方案。",
     },
     markets: {
       tagline: "行业应用",
@@ -876,11 +1460,11 @@ const translations: Record<Locale, Translations> = {
       q2: "你们提供OEM/自有品牌服务吗？",
       a2: "是的，我们提供全面的OEM服务，包括定制配方、自有品牌标签和符合您品牌要求的定制包装解决方案。",
       q3: "有哪些配送选项？",
-      a3: "我们通过海运、空运和快递在全球范围内配送。配送方式取决于订单规模和紧急程度。所有货物均包含清关所需的完整文件。",
+      a3: "我们通过海运、空运和快递在全球范围内配送。配送方式取决于订单规模和紧急程度。所有��物均包含清关所需的完整文件。",
       q4: "生产需要多长时间？",
       a4: "标准订单通常在15-30天内准备就绪。大批量或定制订单可能需要30-45天。我们在整个生产过程中提供定期进度更新。",
       q5: "可以申请产品样品吗？",
-      a5: "当然可以。我们鼓励在大批量订单前进行样品评估。可能会收取样品费用，但通常会抵扣到您的首单中。",
+      a5: "当然可以。我们鼓励在大批量订单前进行样品评估。可能会收取���品费用，但通常会抵扣到您的首单中。",
     },
     cta: {
       requestSamples: "申请样品",
@@ -950,6 +1534,197 @@ const translations: Record<Locale, Translations> = {
       email: "邮箱",
       hours: "营业时间",
       allRightsReserved: "版权所有",
+    },
+    stats: {
+      isoCertified: "ISO认证",
+      countriesServed: "覆盖20+国家",
+      yearsExperience: "10年以上",
+      yearsExperienceLabel: "行业经验",
+      exportCountriesLabel: "出口国家",
+      b2bPartnersLabel: "B2B合作伙伴",
+      sqMetersFacility: "平方米厂房",
+      skilledWorkers: "技术工人",
+      unitsYearCapacity: "年产能",
+      qualityPassRate: "质量合格率",
+    },
+    aboutPage: {
+      whyPartnerTitle: "为什么选择我们",
+      productionTagline: "生产制造",
+      ourJourney: "发展历程",
+      milestones: "里程碑",
+      readyToPartner: "准备好与我们合作了吗？",
+      readyToPartnerDesc: "加入500多家全球B2B合作伙伴，信赖我们满足您的艾草采购需求。",
+      viewProducts: "查看产品",
+      timeline2010: "公司在南阳成立",
+      timeline2014: "获得ISO 9001认证",
+      timeline2016: "拓展国际市场",
+      timeline2018: "启动OEM服务",
+      timeline2020: "出口国家超过20个",
+      timeline2024: "全球B2B合作伙伴超过500家",
+    },
+    countries: {
+      japan: "日本",
+      unitedStates: "美国",
+      germany: "德国",
+      france: "法国",
+      unitedKingdom: "英国",
+      canada: "加拿大",
+      australia: "澳大利亚",
+      southKorea: "韩国",
+      taiwan: "台湾",
+      singapore: "新加坡",
+      malaysia: "马来西亚",
+      thailand: "泰国",
+      vietnam: "越南",
+      indonesia: "印度尼西亚",
+      india: "印度",
+      other: "其他",
+    },
+    productDetails: {
+      useClinic: "诊所・治疗・水疗",
+      useModernWellness: "现代养生诊所",
+      useSpaTherapy: "水疗・理疗中心",
+      useManufacturing: "生产制造・OEM",
+      useAcupuncture: "针灸诊所",
+      useRetailHome: "零售・家用",
+      specPurityRatio: "纯度比",
+      specDiameter: "直径",
+      specLength: "长度",
+      specAgingPeriod: "陈化时间",
+      specBurnTime: "燃烧时间",
+      specMaterial: "材质",
+      specType: "类型",
+      specTempRange: "温度范围",
+      specHeatingDuration: "加热时间",
+      specPowerSource: "电源",
+      specSmokeLevel: "烟量",
+      specSizes: "尺寸",
+      specInterior: "内部结构",
+      specHeightAdjustment: "高度调节",
+      specFit: "适配",
+      specFinish: "表面处理",
+      specPurityGrades: "纯度等级",
+      specForm: "形态",
+      specSource: "产地",
+      specAging: "陈化",
+      specColor: "颜色",
+      specPackaging: "包装",
+      specTypes: "种类",
+      specBase: "底座",
+      specGrade: "等级",
+      specHeatDuration: "发热时间",
+      specTemperature: "温度",
+      specIngredients: "成分",
+      specAdhesive: "粘合剂",
+      specSkinSafe: "皮肤安全性",
+      valPurityRange: "10:1至35:1",
+      valDiameters: "18mm / 22mm / 25mm",
+      valLength200: "200mm",
+      valAging3to5: "3-5年",
+      valBurnTime45to60: "45-60分钟",
+      valPureArtemisia: "100%纯艾蒿",
+      valCarbonSmokeless: "碳基无烟型",
+      valTempRange40to65: "40-65°C可调",
+      valHeating20to40: "20-40分钟",
+      valPowerOptions: "自发热/电热可选",
+      valUltraLow: "超低烟（室内适用）",
+      valMedicalGrade: "医疗级材料",
+      valBambooWalnut: "天然竹材/胡桃木",
+      valBoxSizes: "单孔、2孔、4孔、6孔",
+      valStainlessMesh: "不锈钢网",
+      val3Levels: "3档",
+      valStandardSticks: "适配标准艾条（18-25mm）",
+      valNaturalLacquer: "天然漆，食品安全",
+      valPurityGrades: "5:1、10:1、15:1、20:1、35:1",
+      valLooseCompressed: "散装/压缩包",
+      valNanyangArtemisia: "南阳艾蒿",
+      valAging1to5: "1-5年陈化可选",
+      valGoldenYellow: "金黄色（品质指标）",
+      valBagSizes: "1kg、5kg、10kg、25kg袋装",
+      valConeTypes: "传统式/粘贴式",
+      valConeSizes: "迷你（5mm）、小（8mm）、中（12mm）、大（15mm）",
+      valConeBurn3to8: "每个3-8分钟",
+      valConePurity: "20:1至35:1",
+      valConeBase: "纸底/粘贴式可选",
+      valClinicalPro: "临床专业级",
+      valHeat8to12: "8-12小时",
+      valTemp40to50: "40-50°C持续",
+      valPatchSizes: "小（5x5cm）、中（7x10cm）、大（10x14cm）",
+      valPatchIngredients: "艾草提取物、铁粉、活性炭",
+      valHypoallergenic: "低敏医疗级",
+      valDermoTested: "皮肤科测试",
+      packMoxaStick: "每盒10支，每箱50盒。可定制包装。",
+      packSmokeless: "每盒20个，每箱10盒。可提供单独零售包装。",
+      packMoxaBox: "独立包装，每箱20个。",
+      packMoxaWool: "真空密封袋。1kg、5kg、10kg、25kg可选。OEM定制包装。",
+      packMoxaCone: "每盒200个，每箱50盒。可提供独立泡罩包装。",
+      packMoxaPatch: "每零售盒6片，每箱100盒。可定制零售包装。",
+      shipMoxaStick: "海运（20-30天）、空运（5-7天）、快递（3-5天）。所有货物均含完整清关文件。",
+      shipSmokeless: "海运（20-30天）、空运（5-7天）。电热款需特殊处理。",
+      shipMoxaBox: "大批量订单建议海运。精心包装防止损坏。",
+      shipMoxaWool: "大批量订单海运。特殊真空包装确保运输质量。",
+      shipMoxaCone: "空运或海运。防压包装确保运输安全。",
+      shipMoxaPatch: "空运或海运。适应各种气候的温度稳定包装。",
+      scenarioClinicMoxa: "针灸诊所灸疗",
+      scenarioTcm: "中医诊疗实践",
+      scenarioWellnessSpa: "提供热疗的养生水疗",
+      scenarioPhysicalTherapy: "理疗和康复中心",
+      scenarioModernClinic: "通风受限的现代养生诊所",
+      scenarioUrbanSpa: "城市水疗环境",
+      scenarioHomeTherapy: "家庭理疗应用",
+      scenarioSensitivePatient: "敏感患者治疗",
+      scenarioAbdominalMoxa: "腹部艾灸疗法",
+      scenarioBackShoulder: "背部和肩部治疗",
+      scenarioSpaHeat: "水疗热疗项目",
+      scenarioHomeWellness: "家庭养生日常",
+      scenarioDirectMoxa: "直接灸治疗",
+      scenarioConeStickMfg: "艾炷和艾条制造",
+      scenarioOemProduction: "OEM产品生产",
+      scenarioResearchDev: "研发应用",
+      scenarioPreciseAcupoint: "精准穴位艾灸",
+      scenarioScarringTech: "有痕灸和无痕灸技术",
+      scenarioCombinedTherapy: "针灸结合疗法",
+      scenarioHomeSupervised: "指导下的家庭使用",
+      scenarioRetailWellness: "消费者零售养生产品",
+      scenarioHomePainRelief: "居家止痛方案",
+      scenarioTravelTherapy: "旅行便携理疗选择",
+      scenarioSupplementClinical: "临床治疗补充",
+      faqPurityBest: "临床使用最佳纯度比是多少？",
+      faqPurityBestAns: "临床使用建议20:1至35:1纯度比，烟量少且治疗效果最佳。",
+      faqStorage: "艾条如何保存？",
+      faqStorageAns: "存放于阴凉干燥处，避免阳光直射。妥善保存的艾草可保持多年品质。",
+      faqCustomPackaging: "可以定制品牌包装吗？",
+      faqCustomPackagingAns: "可以，我们提供完整的OEM服务，包括定制包装设计、品牌标识和标签。",
+      faqIndoorUse: "室内可以使用吗？",
+      faqIndoorUseAns: "可以，无烟灸具专为通风有限的室内环境设计。",
+      faqTempAccuracy: "温度精度如何？",
+      faqTempAccuracyAns: "我们的设备将温度维持在设定点±2°C范围内，确保治疗一致性。",
+      faqElectricVersion: "有电热版本吗？",
+      faqElectricVersionAns: "有，我们提供自发热和电热两种版本，以适应不同临床需求。",
+      faqWoodTypes: "有哪些木材类型？",
+      faqWoodTypesAns: "我们提供竹材（经济型）、胡桃木（高端）以及OEM订单定制木材选项。",
+      faqHeightAdjust: "使用时可以调节高度吗？",
+      faqHeightAdjustAns: "可以，我们的灸盒具有3档高度调节功能以控制温度。",
+      faqReplacementParts: "可以购买替换零件吗？",
+      faqReplacementPartsAns: "可以，我们单独提供替换网罩和绑带。",
+      faqPurityGrade: "应该选择哪种纯度等级？",
+      faqPurityGradeAns: "制造用途选择5:1至10:1，需要更细腻质感的直接临床使用选择20:1以上。",
+      faqQualityDetermined: "品质如何判定？",
+      faqQualityDeterminedAns: "品质根据叶茎比、颜色（金黄色更佳）和陈化时间来评估。",
+      faqSampleGrades: "可以获得不同等级的样品吗？",
+      faqSampleGradesAns: "可以，我们提供包含多种等级的样品套装供评估。",
+      faqConeTypes: "传统式和粘贴式有什么区别？",
+      faqConeTypesAns: "粘贴式艾炷有带粘性的纸底，便于放置；传统式需要手动定位。",
+      faqConePopular: "最受欢迎的尺寸是哪个？",
+      faqConePopularAns: "中号（12mm）最受一般临床使用欢迎；小号（8mm）适用于面部和敏感部位。",
+      faqConeGinger: "艾炷可以配合姜或盐使用吗？",
+      faqConeGingerAns: "可以，我们的传统式艾炷非常适合使用姜、盐或蒜的间接灸技术。",
+      faqSensitiveSkin: "敏感肌肤安全吗？",
+      faqSensitiveSkinAns: "安全，我们的贴片使用低敏粘合剂并经过皮肤科测试。建议先在小范围测试。",
+      faqCutSize: "贴片可以裁剪使用吗？",
+      faqCutSizeAns: "建议整片使用；裁剪可能影响发热分布和持续时间。",
+      faqRetailPackaging: "有哪些零售包装选项？",
+      faqRetailPackagingAns: "我们提供标准零售盒、礼品套装以及OEM订单的完全定制包装设计。",
     },
   },
 };
