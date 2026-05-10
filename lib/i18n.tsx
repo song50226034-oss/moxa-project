@@ -160,20 +160,26 @@ type Translations = {
     manufacturingDesc: string;
   };
   footer: {
-    copyright: string;
-    tagline: string;
-    quickLinks: string;
-    contactInfo: string;
-    followUs: string;
-    description: string;
-    products: string;
-    company: string;
-    contact: string;
-    premiumMoxa: string;
-    smokelessDevices: string;
-    oemServices: string;
-    rights: string;
-    location: string;
+      copyright: "Moxa Source Partner. All rights reserved.",
+      tagline: "Premium moxa supply from the heart of China's herbal production region.",
+      quickLinks: "Quick Links",
+      contactInfo: "Contact Info",
+      followUs: "Connect With Us",
+      description: "Based in Nanyang, China's traditional moxa production region. We connect global wellness professionals with reliable sourcing solutions.",
+      products: "Products",
+      company: "Company",
+      contact: "Contact",
+      premiumMoxa: "Premium Moxa Sticks",
+      smokelessDevices: "Smokeless Devices",
+      oemServices: "OEM Services",
+      rights: "All rights reserved.",
+      location: "Nanyang, Henan, China",
+      aboutUs: "About Us",
+      faq: "FAQ",
+      contactUs: "Contact Us",
+      email: "Email",
+      hours: "Business Hours",
+      allRightsReserved: "All rights reserved",
   };
 };
 
@@ -508,6 +514,12 @@ const translations: Record<Locale, Translations> = {
       oemServices: "OEMサービス",
       rights: "All rights reserved.",
       location: "中国河南省南陽市",
+      aboutUs: "会社概要",
+      faq: "よくある質問",
+      contactUs: "お問い合わせ",
+      email: "メール",
+      hours: "営業時間",
+      allRightsReserved: "無断転載を禁じます",
     },
   },
   zh: {
@@ -674,6 +686,12 @@ const translations: Record<Locale, Translations> = {
       oemServices: "OEM服务",
       rights: "版权所有。",
       location: "中国河南省南阳市",
+      aboutUs: "关于我们",
+      faq: "常见问题",
+      contactUs: "联系我们",
+      email: "邮箱",
+      hours: "营业时间",
+      allRightsReserved: "版权所有",
     },
   },
 };
