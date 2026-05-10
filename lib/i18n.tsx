@@ -244,6 +244,54 @@ type Translations = {
     hours: string;
     allRightsReserved: string;
   };
+  // Trust badges and stats
+  stats: {
+    isoCertified: string;
+    countriesServed: string;
+    yearsExperience: string;
+    yearsExperienceLabel: string;
+    exportCountriesLabel: string;
+    b2bPartnersLabel: string;
+    sqMetersFacility: string;
+    skilledWorkers: string;
+    unitsYearCapacity: string;
+    qualityPassRate: string;
+  };
+  // About page
+  aboutPage: {
+    whyPartnerTitle: string;
+    productionTagline: string;
+    ourJourney: string;
+    milestones: string;
+    readyToPartner: string;
+    readyToPartnerDesc: string;
+    viewProducts: string;
+    timeline2010: string;
+    timeline2014: string;
+    timeline2016: string;
+    timeline2018: string;
+    timeline2020: string;
+    timeline2024: string;
+  };
+  // Countries for form
+  countries: {
+    japan: string;
+    unitedStates: string;
+    germany: string;
+    france: string;
+    unitedKingdom: string;
+    canada: string;
+    australia: string;
+    southKorea: string;
+    taiwan: string;
+    singapore: string;
+    malaysia: string;
+    thailand: string;
+    vietnam: string;
+    indonesia: string;
+    india: string;
+    other: string;
+  };
 };
 
 const translations: Record<Locale, Translations> = {
@@ -481,6 +529,51 @@ const translations: Record<Locale, Translations> = {
       hours: "Business Hours",
       allRightsReserved: "All rights reserved",
     },
+    stats: {
+      isoCertified: "ISO Certified",
+      countriesServed: "20+ Countries",
+      yearsExperience: "10+ Years",
+      yearsExperienceLabel: "Years Experience",
+      exportCountriesLabel: "Export Countries",
+      b2bPartnersLabel: "B2B Partners",
+      sqMetersFacility: "Sq. Meters Facility",
+      skilledWorkers: "Skilled Workers",
+      unitsYearCapacity: "Units/Year Capacity",
+      qualityPassRate: "Quality Pass Rate",
+    },
+    aboutPage: {
+      whyPartnerTitle: "Why Partner With Us",
+      productionTagline: "Production",
+      ourJourney: "Our Journey",
+      milestones: "Milestones",
+      readyToPartner: "Ready to Partner With Us?",
+      readyToPartnerDesc: "Join 500+ global B2B partners who trust us for their moxa sourcing needs.",
+      viewProducts: "View Products",
+      timeline2010: "Company founded in Nanyang",
+      timeline2014: "ISO 9001 certification achieved",
+      timeline2016: "Expanded to international markets",
+      timeline2018: "OEM services launched",
+      timeline2020: "20+ export countries reached",
+      timeline2024: "500+ global B2B partners",
+    },
+    countries: {
+      japan: "Japan",
+      unitedStates: "United States",
+      germany: "Germany",
+      france: "France",
+      unitedKingdom: "United Kingdom",
+      canada: "Canada",
+      australia: "Australia",
+      southKorea: "South Korea",
+      taiwan: "Taiwan",
+      singapore: "Singapore",
+      malaysia: "Malaysia",
+      thailand: "Thailand",
+      vietnam: "Vietnam",
+      indonesia: "Indonesia",
+      india: "India",
+      other: "Other",
+    },
   },
   ja: {
     nav: {
@@ -670,7 +763,7 @@ const translations: Record<Locale, Translations> = {
       selectType: "種類を選択",
       typeSample: "サンプル請求",
       typeDistributor: "代理店パートナーシップ",
-      typeOEM: "OEM/プライベートラベル",
+      typeOEM: "OEM/プライ��ートラベル",
       typeGeneral: "一般的なお問い合わせ",
       message: "メッセージ",
       messagePlaceholder: "ご要望、ターゲット市場、予想数量などをお知らせください...",
@@ -707,7 +800,7 @@ const translations: Record<Locale, Translations> = {
       premiumMoxa: "プレミアム艾條",
       smokelessDevices: "無煙灸器具",
       oemServices: "OEMサービス",
-      rights: "All rights reserved.",
+      rights: "無断転載を禁じます。",
       location: "中国河南省南陽市",
       aboutUs: "会社概要",
       faq: "よくある質問",
@@ -715,6 +808,51 @@ const translations: Record<Locale, Translations> = {
       email: "メール",
       hours: "営業時間",
       allRightsReserved: "無断転載を禁じます",
+    },
+    stats: {
+      isoCertified: "ISO認証取得",
+      countriesServed: "20カ国以上",
+      yearsExperience: "10年以上",
+      yearsExperienceLabel: "業界経験",
+      exportCountriesLabel: "輸出国",
+      b2bPartnersLabel: "B2Bパートナー",
+      sqMetersFacility: "平方メートルの施設",
+      skilledWorkers: "熟練スタッフ",
+      unitsYearCapacity: "年間生産能力",
+      qualityPassRate: "品質合格率",
+    },
+    aboutPage: {
+      whyPartnerTitle: "パートナーシップの理由",
+      productionTagline: "製造",
+      ourJourney: "私たちの歩み",
+      milestones: "沿革",
+      readyToPartner: "パートナーシップを始めませんか？",
+      readyToPartnerDesc: "艾製品の調達で信頼される500社以上のグローバルB2Bパートナーに加わりましょう。",
+      viewProducts: "製品を見る",
+      timeline2010: "南陽で会社設立",
+      timeline2014: "ISO 9001認証取得",
+      timeline2016: "国際市場へ進出",
+      timeline2018: "OEMサービス開始",
+      timeline2020: "輸出国20カ国以上達成",
+      timeline2024: "グローバルB2Bパートナー500社以上",
+    },
+    countries: {
+      japan: "日本",
+      unitedStates: "アメリカ",
+      germany: "ドイツ",
+      france: "フランス",
+      unitedKingdom: "イギリス",
+      canada: "カナダ",
+      australia: "オーストラリア",
+      southKorea: "韓国",
+      taiwan: "台湾",
+      singapore: "シンガポール",
+      malaysia: "マレーシア",
+      thailand: "タイ",
+      vietnam: "ベトナム",
+      indonesia: "インドネシア",
+      india: "インド",
+      other: "その他",
     },
   },
   zh: {
@@ -950,6 +1088,51 @@ const translations: Record<Locale, Translations> = {
       email: "邮箱",
       hours: "营业时间",
       allRightsReserved: "版权所有",
+    },
+    stats: {
+      isoCertified: "ISO认证",
+      countriesServed: "覆盖20+国家",
+      yearsExperience: "10年以上",
+      yearsExperienceLabel: "行业经验",
+      exportCountriesLabel: "出口国家",
+      b2bPartnersLabel: "B2B合作伙伴",
+      sqMetersFacility: "平方米厂房",
+      skilledWorkers: "技术工人",
+      unitsYearCapacity: "年产能",
+      qualityPassRate: "质量合格率",
+    },
+    aboutPage: {
+      whyPartnerTitle: "为什么选择我们",
+      productionTagline: "生产制造",
+      ourJourney: "发展历程",
+      milestones: "里程碑",
+      readyToPartner: "准备好与我们合作了吗？",
+      readyToPartnerDesc: "加入500多家全球B2B合作伙伴，信赖我们满足您的艾草采购需求。",
+      viewProducts: "查看产品",
+      timeline2010: "公司在南阳成立",
+      timeline2014: "获得ISO 9001认证",
+      timeline2016: "拓展国际市场",
+      timeline2018: "启动OEM服务",
+      timeline2020: "出口国家超过20个",
+      timeline2024: "全球B2B合作伙伴超过500家",
+    },
+    countries: {
+      japan: "日本",
+      unitedStates: "美国",
+      germany: "德国",
+      france: "法国",
+      unitedKingdom: "英国",
+      canada: "加拿大",
+      australia: "澳大利亚",
+      southKorea: "韩国",
+      taiwan: "台湾",
+      singapore: "新加坡",
+      malaysia: "马来西亚",
+      thailand: "泰国",
+      vietnam: "越南",
+      indonesia: "印度尼西亚",
+      india: "印度",
+      other: "其他",
     },
   },
 };

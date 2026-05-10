@@ -22,24 +22,24 @@ const initialState: FormState = {
   message: "",
 };
 
-const countries = [
-  "Japan",
-  "United States",
-  "Germany",
-  "France",
-  "United Kingdom",
-  "Canada",
-  "Australia",
-  "South Korea",
-  "Taiwan",
-  "Singapore",
-  "Malaysia",
-  "Thailand",
-  "Vietnam",
-  "Indonesia",
-  "India",
-  "Other",
-];
+const countryKeys = [
+  "japan",
+  "unitedStates",
+  "germany",
+  "france",
+  "unitedKingdom",
+  "canada",
+  "australia",
+  "southKorea",
+  "taiwan",
+  "singapore",
+  "malaysia",
+  "thailand",
+  "vietnam",
+  "indonesia",
+  "india",
+  "other",
+] as const;
 
 export default function ContactForm() {
   const { t } = useI18n();
@@ -150,9 +150,9 @@ export default function ContactForm() {
             className={`${inputClass} cursor-pointer`}
           >
             <option value="">{t.contact.countryPlaceholder}</option>
-            {countries.map((country) => (
-              <option key={country} value={country}>
-                {country}
+            {countryKeys.map((key) => (
+              <option key={key} value={key}>
+                {t.countries[key]}
               </option>
             ))}
           </select>
