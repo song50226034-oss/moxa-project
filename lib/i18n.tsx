@@ -69,25 +69,40 @@ type Translations = {
     subtitle: string;
     moxaStick: string;
     moxaStickDesc: string;
+    moxaStickShort: string;
     moxaStickSpec: string;
     smokelessDevice: string;
     smokelessDeviceDesc: string;
+    smokelessDeviceShort: string;
     smokelessDeviceSpec: string;
     moxaBox: string;
     moxaBoxDesc: string;
+    moxaBoxShort: string;
     moxaBoxSpec: string;
     moxaWool: string;
     moxaWoolDesc: string;
+    moxaWoolShort: string;
     moxaWoolSpec: string;
     moxaCone: string;
     moxaConeDesc: string;
+    moxaConeShort: string;
     moxaConeSpec: string;
     moxaPatch: string;
     moxaPatchDesc: string;
+    moxaPatchShort: string;
     moxaPatchSpec: string;
     useCase: string;
     specifications: string;
     inquireNow: string;
+    viewDetails: string;
+    requestSample: string;
+    keySpecs: string;
+    moqLabel: string;
+    oemAvailable: string;
+    categoryTraditional: string;
+    categoryModern: string;
+    categoryRaw: string;
+    filterAll: string;
   };
   quality: {
     tagline: string;
@@ -243,25 +258,40 @@ const translations: Record<Locale, Translations> = {
       subtitle: "Comprehensive selection of traditional and modern moxibustion supplies for clinical and wellness applications.",
       moxaStick: "Premium Moxa Stick",
       moxaStickDesc: "Traditional hand-rolled moxa sticks crafted from aged artemisia for consistent, therapeutic-grade heat therapy.",
+      moxaStickShort: "Therapeutic-grade moxa sticks with 3-5 year aged artemisia for consistent heat therapy.",
       moxaStickSpec: "10:1 to 35:1 purity ratios | Multiple sizes | Aged 3-5 years",
       smokelessDevice: "Smokeless Moxa Device",
       smokelessDeviceDesc: "Modern low-smoke moxibustion devices ideal for clinic environments and sensitive spaces.",
+      smokelessDeviceShort: "Indoor-friendly moxibustion devices with precise temperature control.",
       smokelessDeviceSpec: "Carbon-based | Temperature controlled | Indoor-friendly",
       moxaBox: "Moxa Therapy Box",
       moxaBoxDesc: "Versatile wooden therapy boxes for targeted heat treatment on various body areas.",
+      moxaBoxShort: "Versatile therapy boxes for targeted heat treatment on various body areas.",
       moxaBoxSpec: "Multiple sizes | Natural wood | Adjustable height",
       moxaWool: "Pure Moxa Wool",
       moxaWoolDesc: "Premium artemisia wool for direct moxibustion, cone making, and OEM manufacturing.",
+      moxaWoolShort: "Premium artemisia wool for manufacturing and direct moxibustion applications.",
       moxaWoolSpec: "Various grades | Bulk packaging | OEM ready",
       moxaCone: "Moxa Cones",
       moxaConeDesc: "Pre-formed moxa cones for precise acupoint treatment and consistent therapy.",
+      moxaConeShort: "Pre-formed cones for precise acupoint treatment with consistent burn time.",
       moxaConeSpec: "Multiple sizes | Self-adhesive options | Clinical grade",
       moxaPatch: "Moxa Heat Patches",
       moxaPatchDesc: "Self-heating moxa patches for convenient home use and retail distribution.",
+      moxaPatchShort: "Self-heating patches with 8-12 hour warmth for retail and home use.",
       moxaPatchSpec: "8-12 hour warmth | Various sizes | Retail ready",
       useCase: "Use Case",
       specifications: "Specifications",
       inquireNow: "Inquire Now",
+      viewDetails: "View Details",
+      requestSample: "Request Sample",
+      keySpecs: "Key Specifications",
+      moqLabel: "MOQ",
+      oemAvailable: "OEM Available",
+      categoryTraditional: "Traditional",
+      categoryModern: "Modern",
+      categoryRaw: "Raw Materials",
+      filterAll: "All Products",
     },
     quality: {
       tagline: "Quality Assurance",
@@ -415,25 +445,40 @@ const translations: Record<Locale, Translations> = {
       subtitle: "臨床およびウェルネス用途向けの伝統的・現代的灸用品の包括的なセレクション。",
       moxaStick: "プレミアム艾條",
       moxaStickDesc: "熟成ヨモギから手巻きで作られた伝統的な艾條。一貫した治療グレードの温熱療法に。",
+      moxaStickShort: "3〜5年熟成の治療グレード艾條で一貫した温熱療法を実現。",
       moxaStickSpec: "10:1〜35:1の純度比 | 複数サイズ | 3〜5年熟成",
       smokelessDevice: "無煙灸器具",
       smokelessDeviceDesc: "クリニック環境や敏感な空間に最適な現代的低煙灸器具。",
+      smokelessDeviceShort: "精密な温度制御を備えた室内対応の灸器具。",
       smokelessDeviceSpec: "炭素ベース | 温度制御 | 室内対応",
       moxaBox: "灸箱",
-      moxaBoxDesc: "様々な体の部位への温熱治療用の多用途木製セラピーボックス。",
+      moxaBoxDesc: "様々な体の部位への温熱治療の多用途木製セラピーボックス。",
+      moxaBoxShort: "様々な体の部位への的確な温熱治療のための多用途セラピーボックス。",
       moxaBoxSpec: "複数サイズ | 天然木材 | 高さ調整可能",
       moxaWool: "純艾絨",
       moxaWoolDesc: "直接灸、艾炷作成、OEM製造用のプレミアムヨモギウール。",
+      moxaWoolShort: "製造および直接灸用途のプレミアムヨモギウール。",
       moxaWoolSpec: "各種グレード | バルク包装 | OEM対応",
       moxaCone: "艾炷",
       moxaConeDesc: "経穴治療と一貫したセラピーのための成形済み艾炷。",
+      moxaConeShort: "一貫した燃焼時間で精密な経穴治療のための成形済み艾炷。",
       moxaConeSpec: "複数サイズ | 粘着式オプション | クリニカルグレード",
       moxaPatch: "温灸パッチ",
       moxaPatchDesc: "家庭用と小売流通に便利な自己発熱式艾パッチ。",
+      moxaPatchShort: "小売と家庭用に8〜12時間の温かさを提供する自己発熱パッチ。",
       moxaPatchSpec: "8〜12時間の温かさ | 各種サイズ | 小売対応",
       useCase: "用途",
       specifications: "仕様",
       inquireNow: "今すぐ問い合わせ",
+      viewDetails: "詳細を見る",
+      requestSample: "サンプル請求",
+      keySpecs: "主な仕様",
+      moqLabel: "最小発注数量",
+      oemAvailable: "OEM対応",
+      categoryTraditional: "伝統的",
+      categoryModern: "現代的",
+      categoryRaw: "原材料",
+      filterAll: "すべての製品",
     },
     quality: {
       tagline: "品質保証",
@@ -587,25 +632,40 @@ const translations: Record<Locale, Translations> = {
       subtitle: "为临床和养生应用提供传统及现代艾灸用品的全面选择。",
       moxaStick: "优质艾条",
       moxaStickDesc: "采用陈年艾草手工卷制的传统艾条，为热疗提供一致的治疗级效果。",
+      moxaStickShort: "3-5年陈化的治疗级艾条，提供一致的温热疗效。",
       moxaStickSpec: "10:1至35:1纯度比 | 多种规格 | 3-5年陈化",
       smokelessDevice: "无烟灸具",
       smokelessDeviceDesc: "适合诊所环境和敏感空间的现代低烟艾灸设备。",
+      smokelessDeviceShort: "精准温控的室内适用艾灸设备。",
       smokelessDeviceSpec: "碳基材料 | 温度控制 | 室内适用",
       moxaBox: "艾灸盒",
       moxaBoxDesc: "用于身体各部位热疗的多功能木质治疗盒。",
+      moxaBoxShort: "用于身体各部位精准温热治疗的多功能治疗盒。",
       moxaBoxSpec: "多种尺寸 | 天然木材 | 高度可调",
       moxaWool: "纯艾绒",
       moxaWoolDesc: "用于直接灸、艾炷制作和OEM生产的优质艾草绒。",
+      moxaWoolShort: "用于生产和直接灸的优质艾草绒原料。",
       moxaWoolSpec: "多种等级 | 批量包装 | OEM就绪",
       moxaCone: "艾炷",
       moxaConeDesc: "用于精准穴位治疗和一致疗效的预制艾炷。",
+      moxaConeShort: "燃烧时间一致的预制艾炷，适用于精准穴位治疗。",
       moxaConeSpec: "多种尺寸 | 自粘选项 | 临床级",
       moxaPatch: "艾灸贴",
       moxaPatchDesc: "方便家用和零售分销的自发热艾草贴。",
+      moxaPatchShort: "8-12小时持续温热的自发热贴，适用于零售和家用。",
       moxaPatchSpec: "8-12小时温热 | 多种尺寸 | 零售就绪",
       useCase: "用途",
       specifications: "规格",
       inquireNow: "立即咨询",
+      viewDetails: "查看详情",
+      requestSample: "申请样品",
+      keySpecs: "主要规格",
+      moqLabel: "起订量",
+      oemAvailable: "支持OEM",
+      categoryTraditional: "传统产品",
+      categoryModern: "现代产品",
+      categoryRaw: "原材料",
+      filterAll: "全部产品",
     },
     quality: {
       tagline: "质量保证",
