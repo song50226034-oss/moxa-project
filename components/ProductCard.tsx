@@ -13,9 +13,13 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   const name = t.products[product.nameKey as keyof typeof t.products] || product.nameKey;
   const shortDesc = t.products[product.shortDescKey as keyof typeof t.products] || t.products[product.descriptionKey as keyof typeof t.products] || product.descriptionKey;
+  const useCase = t.productDetails[product.useKey as keyof typeof t.productDetails] || product.useKey;
 
-  // Get first 3 key specifications for the card
-  const keySpecs = product.specifications.slice(0, 3);
+  // Get first 3 key specifications for the card with translations
+  const keySpecs = product.specifications.slice(0, 3).map(spec => ({
+    label: t.productDetails[spec.labelKey as keyof typeof t.productDetails] || spec.labelKey,
+    value: t.productDetails[spec.valueKey as keyof typeof t.productDetails] || spec.valueKey,
+  }));
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-card transition-all hover:-translate-y-1 hover:shadow-premium">
@@ -60,7 +64,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Key Specifications */}
         <div className="mt-4 rounded-lg bg-stonewash/50 p-3">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-cedar/50">
-            {t.products.keySpecs || "Key Specifications"}
+            {t.products.keySpecs}
           </p>
           <ul className="space-y-1">
             {keySpecs.map((spec, index) => (
@@ -76,15 +80,15 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="mt-4 flex items-center justify-between border-t border-cedar/10 pt-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.1em] text-cedar/50">
-              {t.products.moqLabel || "MOQ"}
+              {t.products.moqLabel}
             </p>
             <p className="mt-0.5 text-sm font-medium text-cedar">{product.moq}</p>
           </div>
           <div className="text-right">
             <p className="text-xs font-semibold uppercase tracking-[0.1em] text-cedar/50">
-              {t.products.useCase || "Use Case"}
+              {t.products.useCase}
             </p>
-            <p className="mt-0.5 text-sm text-cedar">{product.use}</p>
+            <p className="mt-0.5 text-sm text-cedar">{useCase}</p>
           </div>
         </div>
 
@@ -94,13 +98,13 @@ export default function ProductCard({ product }: ProductCardProps) {
             href={`/products/${product.id}`}
             className="flex h-11 flex-1 items-center justify-center rounded-lg border border-cedar/20 text-sm font-semibold text-cedar transition-colors hover:border-ink hover:bg-ink hover:text-rice"
           >
-            {t.products.viewDetails || "View Details"}
+            {t.products.viewDetails}
           </Link>
           <Link
             href={`/contact?product=${product.id}&type=sample`}
             className="flex h-11 flex-1 items-center justify-center rounded-lg bg-matcha text-sm font-semibold text-rice transition-colors hover:bg-ink"
           >
-            {t.products.requestSample || "Request Sample"}
+            {t.products.requestSample}
           </Link>
         </div>
       </div>

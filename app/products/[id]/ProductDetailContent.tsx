@@ -19,7 +19,26 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
 
   const name = t.products[product.nameKey as keyof typeof t.products] || product.nameKey;
   const description = t.products[product.descriptionKey as keyof typeof t.products] || product.descriptionKey;
+  const useCase = t.productDetails[product.useKey as keyof typeof t.productDetails] || product.useKey;
+  const packaging = t.productDetails[product.packagingKey as keyof typeof t.productDetails] || product.packagingKey;
+  const shippingInfo = t.productDetails[product.shippingInfoKey as keyof typeof t.productDetails] || product.shippingInfoKey;
   const relatedProducts = getRelatedProducts(product.id);
+
+  // Helper function to get translated spec
+  const getSpec = (labelKey: string, valueKey: string) => ({
+    label: t.productDetails[labelKey as keyof typeof t.productDetails] || labelKey,
+    value: t.productDetails[valueKey as keyof typeof t.productDetails] || valueKey,
+  });
+
+  // Helper function to get translated usage scenario
+  const getScenario = (key: string) => 
+    t.productDetails[key as keyof typeof t.productDetails] || key;
+
+  // Helper function to get translated FAQ
+  const getFaq = (questionKey: string, answerKey: string) => ({
+    question: t.productDetails[questionKey as keyof typeof t.productDetails] || questionKey,
+    answer: t.productDetails[answerKey as keyof typeof t.productDetails] || answerKey,
+  });
 
   return (
     <div className="pb-20 lg:pb-28">
@@ -112,11 +131,11 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">{t.products.useCase}</p>
-                  <p className="mt-1 font-medium text-ink">{product.use}</p>
+                  <p className="mt-1 font-medium text-ink">{useCase}</p>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
                   <p className="text-xs font-semibold uppercase tracking-wider text-cedar/50">{t.products.packaging}</p>
-                  <p className="mt-1 text-sm text-cedar">{product.packaging}</p>
+                  <p className="mt-1 text-sm text-cedar">{packaging}</p>
                 </div>
               </div>
 
@@ -155,17 +174,20 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
           <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-card">
             <table className="w-full">
               <tbody>
-                {product.specifications.map((spec, index) => (
-                  <tr
-                    key={index}
-                    className={index % 2 === 0 ? "bg-white" : "bg-stonewash/30"}
-                  >
-                    <td className="px-6 py-4 text-sm font-medium text-cedar/70">
-                      {spec.label}
-                    </td>
-                    <td className="px-6 py-4 text-sm text-ink">{spec.value}</td>
-                  </tr>
-                ))}
+                {product.specifications.map((spec, index) => {
+                  const translatedSpec = getSpec(spec.labelKey, spec.valueKey);
+                  return (
+                    <tr
+                      key={index}
+                      className={index % 2 === 0 ? "bg-white" : "bg-stonewash/30"}
+                    >
+                      <td className="px-6 py-4 text-sm font-medium text-cedar/70">
+                        {translatedSpec.label}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-ink">{translatedSpec.value}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -179,7 +201,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
             {t.products.usageScenarios}
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            {product.usageScenarios.map((scenario, index) => (
+            {product.usageScenarioKeys.map((scenarioKey, index) => (
               <div
                 key={index}
                 className="flex items-start gap-4 rounded-xl bg-white p-5 shadow-card"
@@ -189,7 +211,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-sm leading-relaxed text-cedar">{scenario}</p>
+                <p className="text-sm leading-relaxed text-cedar">{getScenario(scenarioKey)}</p>
               </div>
             ))}
           </div>
@@ -277,7 +299,7 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-ink">{t.products.globalDelivery}</h3>
-                <p className="mt-2 leading-relaxed text-cedar/80">{product.shippingInfo}</p>
+                <p className="mt-2 leading-relaxed text-cedar/80">{shippingInfo}</p>
               </div>
             </div>
           </div>
@@ -291,27 +313,30 @@ export default function ProductDetailContent({ product }: ProductDetailContentPr
             {t.products.productFaq}
           </h2>
           <div className="mt-8 space-y-4">
-            {product.faqs.map((faq, index) => (
-              <details
-                key={index}
-                className="group rounded-xl bg-white shadow-card"
-              >
-                <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-left">
-                  <span className="font-medium text-ink">{faq.question}</span>
-                  <svg
-                    className="h-5 w-5 shrink-0 text-cedar/50 transition-transform group-open:rotate-180"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="border-t border-stonewash px-6 py-5">
-                  <p className="text-sm leading-relaxed text-cedar/80">{faq.answer}</p>
-                </div>
-              </details>
-            ))}
+            {product.faqs.map((faq, index) => {
+              const translatedFaq = getFaq(faq.questionKey, faq.answerKey);
+              return (
+                <details
+                  key={index}
+                  className="group rounded-xl bg-white shadow-card"
+                >
+                  <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-left">
+                    <span className="font-medium text-ink">{translatedFaq.question}</span>
+                    <svg
+                      className="h-5 w-5 shrink-0 text-cedar/50 transition-transform group-open:rotate-180"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="border-t border-stonewash px-6 py-5">
+                    <p className="text-sm leading-relaxed text-cedar/80">{translatedFaq.answer}</p>
+                  </div>
+                </details>
+              );
+            })}
           </div>
         </div>
       </section>
