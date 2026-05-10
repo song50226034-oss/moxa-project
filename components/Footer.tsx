@@ -7,19 +7,19 @@ export default function Footer() {
   const { t } = useI18n();
 
   const footerLinks = {
-  products: [
-    { label: t?.footer?.premiumMoxa || "Premium Moxa Products", href: "/products" },
-    { label: t?.footer?.smokelessDevices || "Smokeless Devices", href: "/products" },
-    { label: t?.footer?.oemServices || "OEM Services", href: "/contact" },
-  ],
-  company: [
-    { label: t?.footer?.aboutUs || "About Us", href: "/about" },
-    { label: t?.footer?.contact || "Contact", href: "/contact" },
-  ],
-  resources: [
-    { label: t?.footer?.faq || "FAQ", href: "/faq" },
-  ],
-};
+    products: [
+      { label: t.footer?.premiumMoxa || "Premium Moxa Products", href: "/products" },
+      { label: t.footer?.smokelessDevices || "Smokeless Devices", href: "/products" },
+      { label: t.footer?.oemServices || "OEM Services", href: "/contact" },
+    ],
+    company: [
+      { label: t.footer?.aboutUs || "About Us", href: "/about" },
+      { label: t.footer?.contact || "Contact", href: "/contact" },
+    ],
+    resources: [
+      { label: t.footer?.faq || "FAQ", href: "/faq" },
+    ],
+  };
 
   return (
     <footer className="border-t border-cedar/10 bg-ink text-rice">
@@ -34,7 +34,7 @@ export default function Footer() {
               </h3>
             </Link>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-rice/70">
-              {t("footer.description")}
+              {t.footer?.description}
             </p>
             <div className="mt-6 flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-rice/10">
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Products Column */}
           <div>
-            <h4 className="font-medium text-rice">{t("footer.products")}</h4>
+            <h4 className="font-medium text-rice">{t.footer?.products}</h4>
             <ul className="mt-4 space-y-3">
               {footerLinks.products.map((link) => (
                 <li key={link.label}>
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Company Column */}
           <div>
-            <h4 className="font-medium text-rice">{t("footer.company")}</h4>
+            <h4 className="font-medium text-rice">{t.footer?.company}</h4>
             <ul className="mt-4 space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -88,7 +88,7 @@ export default function Footer() {
               ))}
             </ul>
             <div className="mt-6">
-              <h4 className="font-medium text-rice">{t("footer.contact")}</h4>
+              <h4 className="font-medium text-rice">{t.footer?.contact}</h4>
               <p className="mt-2 text-sm text-rice/70">
                 info@moxasource.com
               </p>
@@ -101,10 +101,10 @@ export default function Footer() {
       <div className="border-t border-rice/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row sm:px-8 lg:px-12">
           <p className="text-sm text-rice/50">
-            Copyright {new Date().getFullYear()} Moxa Source Partner. {t("footer.rights")}
+            Copyright {new Date().getFullYear()} Moxa Source Partner. {t.footer?.rights}
           </p>
           <div className="flex items-center gap-6 text-sm text-rice/50">
-            <span>{t("footer.location")}</span>
+            <span>{t.footer?.location}</span>
           </div>
         </div>
       </div>
