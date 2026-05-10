@@ -160,26 +160,26 @@ type Translations = {
     manufacturingDesc: string;
   };
   footer: {
-      copyright: "Moxa Source Partner. All rights reserved.",
-      tagline: "Premium moxa supply from the heart of China's herbal production region.",
-      quickLinks: "Quick Links",
-      contactInfo: "Contact Info",
-      followUs: "Connect With Us",
-      description: "Based in Nanyang, China's traditional moxa production region. We connect global wellness professionals with reliable sourcing solutions.",
-      products: "Products",
-      company: "Company",
-      contact: "Contact",
-      premiumMoxa: "Premium Moxa Sticks",
-      smokelessDevices: "Smokeless Devices",
-      oemServices: "OEM Services",
-      rights: "All rights reserved.",
-      location: "Nanyang, Henan, China",
-      aboutUs: "About Us",
-      faq: "FAQ",
-      contactUs: "Contact Us",
-      email: "Email",
-      hours: "Business Hours",
-      allRightsReserved: "All rights reserved",
+    copyright: string;
+    tagline: string;
+    quickLinks: string;
+    contactInfo: string;
+    followUs: string;
+    description: string;
+    products: string;
+    company: string;
+    contact: string;
+    premiumMoxa: string;
+    smokelessDevices: string;
+    oemServices: string;
+    rights: string;
+    location: string;
+    aboutUs: string;
+    faq: string;
+    contactUs: string;
+    email: string;
+    hours: string;
+    allRightsReserved: string;
   };
 };
 
@@ -348,6 +348,12 @@ const translations: Record<Locale, Translations> = {
       oemServices: "OEM Services",
       rights: "All rights reserved.",
       location: "Nanyang, Henan, China",
+      aboutUs: "About Us",
+      faq: "FAQ",
+      contactUs: "Contact Us",
+      email: "Email",
+      hours: "Business Hours",
+      allRightsReserved: "All rights reserved",
     },
   },
   ja: {
