@@ -165,6 +165,15 @@ type Translations = {
     quickLinks: string;
     contactInfo: string;
     followUs: string;
+    description: string;
+    products: string;
+    company: string;
+    contact: string;
+    premiumMoxa: string;
+    smokelessDevices: string;
+    oemServices: string;
+    rights: string;
+    location: string;
   };
 };
 
@@ -324,6 +333,15 @@ const translations: Record<Locale, Translations> = {
       quickLinks: "Quick Links",
       contactInfo: "Contact Info",
       followUs: "Connect With Us",
+      description: "Based in Nanyang, China's traditional moxa production region. We connect global wellness professionals with reliable sourcing solutions.",
+      products: "Products",
+      company: "Company",
+      contact: "Contact",
+      premiumMoxa: "Premium Moxa Sticks",
+      smokelessDevices: "Smokeless Devices",
+      oemServices: "OEM Services",
+      rights: "All rights reserved.",
+      location: "Nanyang, Henan, China",
     },
   },
   ja: {
@@ -372,7 +390,7 @@ const translations: Record<Locale, Translations> = {
       step1Desc: "ご要望、市場フォーカス、製品への関心をお知らせください。",
       step2: "サンプル評価",
       step2Desc: "品質、仕様、適合性を評価するためのサンプルをお届けします。",
-      step3: "条件合意",
+      step3: "条���合意",
       step3Desc: "価格、最小発注数量、パッケージング、配送手配を決定。",
       step4: "製造",
       step4Desc: "品質管理された製造と定期的な進捗報告。",
@@ -481,6 +499,15 @@ const translations: Record<Locale, Translations> = {
       quickLinks: "クイックリンク",
       contactInfo: "連絡先情報",
       followUs: "フォローする",
+      description: "中国伝統の艾生産地、南陽を拠点に。世界のウェルネス専門家に信頼できる調達ソリューションを提供。",
+      products: "製品",
+      company: "会社情報",
+      contact: "連絡先",
+      premiumMoxa: "プレミアム艾條",
+      smokelessDevices: "無煙灸器具",
+      oemServices: "OEMサービス",
+      rights: "All rights reserved.",
+      location: "中国河南省南陽市",
     },
   },
   zh: {
@@ -638,6 +665,15 @@ const translations: Record<Locale, Translations> = {
       quickLinks: "快速链接",
       contactInfo: "联系信息",
       followUs: "关注我们",
+      description: "立足于中国传统艾草生产基地南阳，为全球养生专业人士提供可靠的采购解决方案。",
+      products: "产品",
+      company: "公司",
+      contact: "联系方式",
+      premiumMoxa: "优质艾条",
+      smokelessDevices: "无烟灸具",
+      oemServices: "OEM服务",
+      rights: "版权所有。",
+      location: "中国河南省南阳市",
     },
   },
 };
